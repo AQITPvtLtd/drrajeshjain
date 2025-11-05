@@ -54,12 +54,12 @@ export default function Faq() {
             </div>
 
             {/* Image for small screens */}
-            <div className="lg:hidden flex-1 w-full flex justify-center items-center">
+            {/* <div className="lg:hidden flex-1 w-full flex justify-center items-center">
               <div className="relative">
                 <div className="absolute inset-0 bg-[#1e3b70] rounded-3xl w-[85%] h-[90%] top-5 left-5 -z-10"></div>
                 <Image src="/about/faq.png" alt="Doctor" width={420} height={480} className="rounded-2xl object-contain" />
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
 

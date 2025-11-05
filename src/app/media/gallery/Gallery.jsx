@@ -38,24 +38,23 @@ const Gallery = () => {
 
             {/* Masonry Grid */}
             {/* Uniform Grid */}
-<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 lg:px-20">
-  {galleryData.map((photo, index) => (
-    <div
-      key={photo.id}
-      className="overflow-hidden rounded-2xl cursor-pointer shadow-md"
-      onClick={() => setSelectedIndex(index)}
-    >
-      <Image
-        src={`/gallery/${photo.path}`}
-        alt={`Photo ${photo.id}`}
-        width={600}
-        height={400}
-        className="w-full h-64 object-cover rounded-2xl" // 👈 fixed height
-      />
-    </div>
-  ))}
-</div>
-
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 lg:px-20">
+                {galleryData.map((photo, index) => (
+                    <div
+                        key={photo.id}
+                        className="overflow-hidden rounded-2xl cursor-pointer shadow-md"
+                        onClick={() => setSelectedIndex(index)}
+                    >
+                        <Image
+                            src={`/gallery/${photo.path}`}
+                            alt={`Photo ${photo.id}`}
+                            width={600}
+                            height={400}
+                            className="w-full h-64 object-cover rounded-2xl" // 👈 fixed height
+                        />
+                    </div>
+                ))}
+            </div>
 
             {/* Modal */}
             {selectedIndex !== null && (

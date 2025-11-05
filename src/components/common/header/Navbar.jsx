@@ -12,7 +12,7 @@ const Navbar = () => {
         <div className="flex items-center space-x-2">
           <Image
             src="/logo/jsrlogo.png" // replace with your logo path
-            alt="JSR Logo"
+            alt=""
             width={55}
             height={55}
             className="object-contain"

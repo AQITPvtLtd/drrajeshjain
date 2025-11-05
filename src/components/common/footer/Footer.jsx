@@ -18,7 +18,7 @@ export default function Footer() {
         {/* Logo & Social Icons */}
         <div className="flex flex-col md:flex-row items-center justify-between border-b border-sky-500 pb-8">
           <div className="flex items-center gap-2 mb-6 md:mb-0">
-            <Image src="/logo.png" alt="Medixi Logo" width={150} height={60} />
+            <Image src="/logo.png" alt="" width={150} height={60} />
           </div>
           <div className="flex gap-5">
             <a

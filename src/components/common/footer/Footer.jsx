@@ -1,0 +1,143 @@
+"use client";
+import React from "react";
+import {
+  FaFacebookF,
+  FaPinterestP,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import { FaLocationDot, FaPhone, FaEnvelope, FaSquareXTwitter } from "react-icons/fa6";
+import { HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
+import Image from "next/image";
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="bg-[#0b2c5f] text-white pt-16 relative overflow-hidden">
+      {/* Top Section */}
+      <div className="container mx-auto px-6 md:px-12">
+        {/* Logo & Social Icons */}
+        <div className="flex flex-col md:flex-row items-center justify-between border-b border-sky-500 pb-8">
+          <div className="flex items-center gap-2 mb-6 md:mb-0">
+            <Image src="/logo.png" alt="Medixi Logo" width={150} height={60} />
+          </div>
+          <div className="flex gap-5">
+            <a
+              href="#"
+              className="bg-white/10 hover:bg-sky-500 p-3 rounded-full transition"
+            >
+              <FaFacebookF size={18} />
+            </a>
+            <a
+              href="#"
+              className="bg-white/10 hover:bg-sky-500 p-3 rounded-full transition"
+            >
+              <FaSquareXTwitter size={18} />
+            </a>
+            <a
+              href="#"
+              className="bg-white/10 hover:bg-sky-500 p-3 rounded-full transition"
+            >
+              <FaPinterestP size={18} />
+            </a>
+            <a
+              href="#"
+              className="bg-white/10 hover:bg-sky-500 p-3 rounded-full transition"
+            >
+              <FaLinkedinIn size={18} />
+            </a>
+          </div>
+        </div>
+
+        {/* Main Footer Section */}
+<div className="mt-10">
+  <div className="container mx-auto px-6">
+    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12 justify-between text-left">
+      
+      {/* Quick Links */}
+      <div>
+        <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
+        <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
+        <ul className="grid grid-cols-2 gap-x-6 text-sm">
+          <div className="space-y-2">
+            <li><Link href="/" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Home</Link></li>
+            <li><Link href="/about" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>About Us</Link></li>
+            <li><Link href="/team" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Our Team</Link></li>
+            <li><Link href="/contact" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Contact</Link></li>
+          </div>
+
+          <div className="space-y-2">
+            <li><Link href="/blogs" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Blogs</Link></li>
+            <li><Link href="/gallery" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Gallery</Link></li>
+            <li><Link href="/videos" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Videos</Link></li>
+          </div>
+        </ul>
+      </div>
+
+      {/* Treatments */}
+      <div>
+        <h2 className="text-2xl font-semibold mb-4">Treatments</h2>
+        <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
+        <ul className="grid grid-cols-2 gap-x-6 text-sm">
+          <div className="space-y-2">
+            <li><Link href="/team/dr-rajesh-jain" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Surgical Oncology</Link></li>
+            <li><Link href="/team/dr-ishan-mohan" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Head & Neck Oncosurgery</Link></li>
+            <li><Link href="/team/dr-himanshu-gupta" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Plastic & Onco Reconstructive Surgery</Link></li>
+          </div>
+
+          <div className="space-y-2">
+            <li><Link href="/team/dr-pranjal-kulshreshtha" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Breast Oncological Surgery</Link></li>
+            <li><Link href="/team/dr-shruti-bhatia" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Gynaecological Surgical Oncology</Link></li>
+          </div>
+        </ul>
+      </div>
+
+      {/* Contact Info */}
+      <div>
+        <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+        <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
+        <ul className="space-y-3 text-sm">
+          <li className="flex items-start gap-3">
+            <FaLocationDot className="text-sky-400 mt-1" />
+            <Link href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7" target="_blank" className="hover:text-sky-400">
+              <p className="">
+                Pusa Rd, Radha Soami Satsang,
+                
+                Rajinder Nagar, New Delhi, Delhi, 110005
+              </p>
+            </Link>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <FaEnvelope className="text-sky-400" />
+            <Link href="mailto:drrajeshjainonococare@gmail.com" className="hover:text-sky-400">
+              drrajeshjainonococare@gmail.com
+            </Link>
+          </li>
+
+          <li className="flex items-center gap-3">
+            <FaPhone className="text-sky-400" />
+            <Link href="tel:+919810465644" className="hover:text-sky-400">
+              +91 98104 65644
+            </Link>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+      </div>
+
+      {/* Bottom Bar */}
+      <div className="bg-sky-500 mt-10 py-4 text-center text-sm">
+        <p>
+          <Link href="https://tekbooster.com/" target="_blank">
+            Design & Developed By Tek Booster (Digital Marketing Company)
+          </Link>
+        </p>
+      </div>
+    </footer>
+  );
+}

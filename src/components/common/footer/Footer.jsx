@@ -60,9 +60,9 @@ export default function Footer() {
                 <ul className="grid grid-cols-2 gap-x-6 text-sm">
                   <div className="space-y-2">
                     <li><Link href="/" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Home</Link></li>
-                    <li><Link href="/about" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>About Us</Link></li>
-                    <li><Link href="/team" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Our Team</Link></li>
-                    <li><Link href="/contact" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Contact</Link></li>
+                    <li><Link href="/about-us" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>About Us</Link></li>
+                    <li><Link href="/our-team" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Our Team</Link></li>
+                    <li><Link href="/contact-us" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Contact Us</Link></li>
                   </div>
 
                   <div className="space-y-2">

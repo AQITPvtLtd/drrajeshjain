@@ -6,7 +6,6 @@ import { MdMedicalServices } from "react-icons/md";
 import { FaBandAid } from "react-icons/fa";
 import { FaRibbon } from "react-icons/fa";
 import { FaFemale } from "react-icons/fa";
-import { GiCrossedSwords } from "react-icons/gi";
 
 const services = [
   {
@@ -14,35 +13,35 @@ const services = [
     title: "Surgical Oncology",
     description:
       "",
-    href: "/team/dr-rajesh-jain",
+    href: "/our-team/dr-rajesh-jain",
   },
   {
     icon: <MdMedicalServices className="text-white text-3xl" />,
     title: "Head & Neck Oncosurgery",
     description:
       "",
-    href: "/team/dr-ishan-mohan",
+    href: "/our-team/dr-ishan-mohan",
   },
   {
     icon: <FaBandAid className="text-white text-3xl" />,
     title: "Plastic & Onco Reconstructive Surgery",
     description:
       "",
-    href: "/team/dr-himanshu-gupta",
+    href: "/our-team/dr-himanshu-gupta",
   },
   {
     icon: <FaRibbon className="text-white text-3xl" />,
     title: "Breast Oncological Surgery",
     description:
       "",
-    href: "/team/dr-pranjal-kulshreshtha",
+    href: "/our-team/dr-pranjal-kulshreshtha",
   },
   {
     icon: <FaFemale className="text-white text-3xl" />,
     title: "Gynaecological Surgical Oncology",
     description:
       "",
-    href: "/team/dr-shruti-bhatia",
+    href: "/treatments/gynaecological",
   },
 ];
 

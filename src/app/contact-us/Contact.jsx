@@ -17,15 +17,15 @@ const Contact = () => {
                 >
                     Get in Touch
                 </h2>
-                <div className="w-20 sm:w-24 h-1 bg-[#d0342c] mx-auto mb-10 rounded-full"></div>
+                <div className="w-20 sm:w-24 h-1 bg-[#0b2c5f] mx-auto mb-10 rounded-full"></div>
 
                 {/* Contact Info Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
 
                     {/* Email */}
-                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#f77f00]">
+                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f]">
                         <div className="flex justify-center mb-4">
-                            <FaEnvelope className="text-[#f77f00] text-3xl" />
+                            <FaEnvelope className="text-[#0b2c5f] text-3xl" />
                         </div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
                             Email Support
@@ -42,9 +42,9 @@ const Contact = () => {
                     </div>
 
                     {/* Phone */}
-                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#2b9348]">
+                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f]">
                         <div className="flex justify-center mb-4">
-                            <FaPhoneAlt className="text-[#2b9348] text-3xl" />
+                            <FaPhoneAlt className="text-[#0b2c5f] text-3xl" />
                         </div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
                             Let's Talk
@@ -57,9 +57,9 @@ const Contact = () => {
                     </div>
 
                     {/* Location */}
-                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#d0342c]">
+                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f]">
                         <div className="flex justify-center mb-4">
-                            <FaMapMarkerAlt className="text-[#d0342c] text-3xl" />
+                            <FaMapMarkerAlt className="text-[#0b2c5f] text-3xl" />
                         </div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
                             Location
@@ -78,9 +78,9 @@ const Contact = () => {
                     </div>
 
                     {/* Timing */}
-                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0077b6]">
+                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f]">
                         <div className="flex justify-center mb-4">
-                            <FaClock className="text-[#0077b6] text-3xl" />
+                            <FaClock className="text-[#0b2c5f] text-3xl" />
                         </div>
                         <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center">
                             Timing Schedule

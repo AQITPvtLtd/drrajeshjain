@@ -2,6 +2,10 @@
 import React from "react";
 import Link from "next/link";
 import { FaHeart, FaUser, FaVial, FaArrowRight } from "react-icons/fa";
+import { MdMedicalServices } from "react-icons/md";
+import { FaBandAid } from "react-icons/fa";
+import { FaRibbon } from "react-icons/fa";
+import { FaFemale } from "react-icons/fa";
 import { GiCrossedSwords } from "react-icons/gi";
 
 const services = [
@@ -9,35 +13,35 @@ const services = [
     icon: <FaHeart className="text-white text-3xl" />,
     title: "Surgical Oncology",
     description:
-      "Integer vitae justo eget magna fermentum iaculis. Posuere urna nec tincidunt praesent.",
+      "",
     href: "/team/dr-rajesh-jain",
   },
   {
-    icon: <GiCrossedSwords className="text-white text-3xl" />,
+    icon: <MdMedicalServices className="text-white text-3xl" />,
     title: "Head & Neck Oncosurgery",
     description:
-      "Integer vitae justo eget magna fermentum iaculis. Posuere urna nec tincidunt praesent.",
+      "",
     href: "/team/dr-ishan-mohan",
   },
   {
-    icon: <FaUser className="text-white text-3xl" />,
+    icon: <FaBandAid className="text-white text-3xl" />,
     title: "Plastic & Onco Reconstructive Surgery",
     description:
-      "Integer vitae justo eget magna fermentum iaculis. Posuere urna nec tincidunt praesent.",
+      "",
     href: "/team/dr-himanshu-gupta",
   },
   {
-    icon: <FaVial className="text-white text-3xl" />,
+    icon: <FaRibbon className="text-white text-3xl" />,
     title: "Breast Oncological Surgery",
     description:
-      "Integer vitae justo eget magna fermentum iaculis. Posuere urna nec tincidunt praesent.",
+      "",
     href: "/team/dr-pranjal-kulshreshtha",
   },
   {
-    icon: <FaVial className="text-white text-3xl" />,
+    icon: <FaFemale className="text-white text-3xl" />,
     title: "Gynaecological Surgical Oncology",
     description:
-      "Integer vitae justo eget magna fermentum iaculis. Posuere urna nec tincidunt praesent.",
+      "",
     href: "/team/dr-shruti-bhatia",
   },
 ];
@@ -60,7 +64,7 @@ export default function Treatments() {
       </div>
 
       {/* Main Cards Grid */}
-      <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
+      <div className="max-w-7xl mx-auto grid grid-cols-1 p-5 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-4">
         {mainServices.map((service, index) => (
           <div
             key={index}
@@ -72,9 +76,6 @@ export default function Treatments() {
             <h3 className="text-[#1a2a5b] text-xl font-semibold mb-3">
               {service.title}
             </h3>
-            <p className="text-gray-500 text-sm leading-relaxed mb-10">
-              {service.description}
-            </p>
             <Link href={service.href}>
               <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
                 <div className="bg-sky-400 w-12 h-12 flex items-center justify-center rounded-full cursor-pointer hover:bg-sky-500 transition-all shadow-md">
@@ -95,9 +96,6 @@ export default function Treatments() {
           <h3 className="text-[#1a2a5b] text-xl font-semibold mb-3">
             {lastService.title}
           </h3>
-          <p className="text-gray-500 text-sm leading-relaxed mb-10">
-            {lastService.description}
-          </p>
           <Link href={lastService.href}>
             <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 translate-y-1/2">
               <div className="bg-sky-400 w-12 h-12 flex items-center justify-center rounded-full cursor-pointer hover:bg-sky-500 transition-all shadow-md">

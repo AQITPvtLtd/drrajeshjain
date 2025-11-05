@@ -49,83 +49,83 @@ export default function Footer() {
         </div>
 
         {/* Main Footer Section */}
-<div className="mt-10">
-  <div className="container mx-auto px-6">
-    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12 justify-between text-left">
-      
-      {/* Quick Links */}
-      <div>
-        <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
-        <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
-        <ul className="grid grid-cols-2 gap-x-6 text-sm">
-          <div className="space-y-2">
-            <li><Link href="/" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Home</Link></li>
-            <li><Link href="/about" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>About Us</Link></li>
-            <li><Link href="/team" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Our Team</Link></li>
-            <li><Link href="/contact" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Contact</Link></li>
+        <div className="mt-10">
+          <div className="container mx-auto px-6">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-12 justify-between text-left">
+
+              {/* Quick Links */}
+              <div>
+                <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
+                <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
+                <ul className="grid grid-cols-2 gap-x-6 text-sm">
+                  <div className="space-y-2">
+                    <li><Link href="/" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Home</Link></li>
+                    <li><Link href="/about" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>About Us</Link></li>
+                    <li><Link href="/team" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Our Team</Link></li>
+                    <li><Link href="/contact" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Contact</Link></li>
+                  </div>
+
+                  <div className="space-y-2">
+                    <li><Link href="/blogs" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Blogs</Link></li>
+                    <li><Link href="/media/gallery" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Gallery</Link></li>
+                    <li><Link href="/media/videos" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Videos</Link></li>
+                  </div>
+                </ul>
+              </div>
+
+              {/* Treatments */}
+              <div>
+                <h2 className="text-2xl font-semibold mb-4">Treatments</h2>
+                <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
+                <ul className="grid grid-cols-2 gap-x-6 text-sm">
+                  <div className="space-y-2">
+                    <li><Link href="/team/dr-rajesh-jain" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Surgical Oncology</Link></li>
+                    <li><Link href="/team/dr-ishan-mohan" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Head & Neck Oncosurgery</Link></li>
+                    <li><Link href="/team/dr-himanshu-gupta" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Plastic & Onco Reconstructive Surgery</Link></li>
+                  </div>
+
+                  <div className="space-y-2">
+                    <li><Link href="/team/dr-pranjal-kulshreshtha" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Breast Oncological Surgery</Link></li>
+                    <li><Link href="/team/dr-shruti-bhatia" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Gynaecological Surgical Oncology</Link></li>
+                  </div>
+                </ul>
+              </div>
+
+              {/* Contact Info */}
+              <div>
+                <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+                <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
+                <ul className="space-y-3 text-sm">
+                  <li className="flex items-start gap-3">
+                    <FaLocationDot className="text-sky-400 mt-1" />
+                    <Link href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7" target="_blank" className="hover:text-sky-400">
+                      <p className="">
+                        Pusa Rd, Radha Soami Satsang,
+
+                        Rajinder Nagar, New Delhi, Delhi, 110005
+                      </p>
+                    </Link>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <FaEnvelope className="text-sky-400" />
+                    <Link href="mailto:drrajeshjainonococare@gmail.com" className="hover:text-sky-400">
+                      drrajeshjainonococare@gmail.com
+                    </Link>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <FaPhone className="text-sky-400" />
+                    <Link href="tel:+919810465644" className="hover:text-sky-400">
+                      +91 98104 65644
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
           </div>
-
-          <div className="space-y-2">
-            <li><Link href="/blogs" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Blogs</Link></li>
-            <li><Link href="/gallery" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Gallery</Link></li>
-            <li><Link href="/videos" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Videos</Link></li>
-          </div>
-        </ul>
-      </div>
-
-      {/* Treatments */}
-      <div>
-        <h2 className="text-2xl font-semibold mb-4">Treatments</h2>
-        <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
-        <ul className="grid grid-cols-2 gap-x-6 text-sm">
-          <div className="space-y-2">
-            <li><Link href="/team/dr-rajesh-jain" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Surgical Oncology</Link></li>
-            <li><Link href="/team/dr-ishan-mohan" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Head & Neck Oncosurgery</Link></li>
-            <li><Link href="/team/dr-himanshu-gupta" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Plastic & Onco Reconstructive Surgery</Link></li>
-          </div>
-
-          <div className="space-y-2">
-            <li><Link href="/team/dr-pranjal-kulshreshtha" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Breast Oncological Surgery</Link></li>
-            <li><Link href="/team/dr-shruti-bhatia" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Gynaecological Surgical Oncology</Link></li>
-          </div>
-        </ul>
-      </div>
-
-      {/* Contact Info */}
-      <div>
-        <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-        <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
-        <ul className="space-y-3 text-sm">
-          <li className="flex items-start gap-3">
-            <FaLocationDot className="text-sky-400 mt-1" />
-            <Link href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7" target="_blank" className="hover:text-sky-400">
-              <p className="">
-                Pusa Rd, Radha Soami Satsang,
-                
-                Rajinder Nagar, New Delhi, Delhi, 110005
-              </p>
-            </Link>
-          </li>
-
-          <li className="flex items-center gap-3">
-            <FaEnvelope className="text-sky-400" />
-            <Link href="mailto:drrajeshjainonococare@gmail.com" className="hover:text-sky-400">
-              drrajeshjainonococare@gmail.com
-            </Link>
-          </li>
-
-          <li className="flex items-center gap-3">
-            <FaPhone className="text-sky-400" />
-            <Link href="tel:+919810465644" className="hover:text-sky-400">
-              +91 98104 65644
-            </Link>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-  </div>
-</div>
+        </div>
 
 
       </div>

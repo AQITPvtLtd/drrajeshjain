@@ -11,8 +11,8 @@ const Navbar = () => {
         {/* ✅ Left: Logo */}
         <div className="flex items-center space-x-2">
           <Image
-            src="/" // replace with your logo path
-            alt=""
+            src="/logo/jsrlogo.png" // replace with your logo path
+            alt="JSR Logo"
             width={55}
             height={55}
             className="object-contain"
@@ -27,7 +27,7 @@ const Navbar = () => {
             <div>
               <Link
                 href="mailto:drrajeshjainonococare@gmail.com"
-                className="text-[#1e3b70] font-semibold text-sm sm:text-base"
+                className="text-[#1e3b70] hover:text-[#00bfe6] font-semibold text-sm sm:text-base"
               >
                 drrajeshjainonococare@gmail.com
               </Link>
@@ -41,7 +41,7 @@ const Navbar = () => {
           <div className="flex items-center space-x-3">
             <FaMapMarkerAlt className="text-[#1e3b70] text-xl min-w-[24px]" />
             <div>
-              <p className="text-[#1e3b70] font-semibold text-sm sm:text-base">
+              <p className="text-[#1e3b70] font-semibold text-sm sm:text-base hover:text-[#00bfe6]">
                 <Link href="https://maps.app.goo.gl/wTsZLoGiiEYL7cZv7" target="_blank">
                   Pusa Rd, Radha Soami Satsang,
                   <br />

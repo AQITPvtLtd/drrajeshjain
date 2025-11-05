@@ -33,7 +33,7 @@ export default function AboutUs() {
             {/* Image */}
             <div className="relative w-[95%] max-w-md md:max-w-lg rounded-2xl overflow-hidden shadow-2xl">
               <Image
-                src="/about/about.jpg" // <-- place your image in /public
+                src="/about/about.png" // <-- place your image in /public
                 alt="Doctors performing surgery"
                 width={700}  // increased width
                 height={800} // increased height

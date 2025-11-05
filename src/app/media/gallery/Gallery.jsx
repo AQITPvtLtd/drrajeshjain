@@ -1,43 +1,41 @@
 "use client";
-import React, { useState } from "react";
-import { FaChevronLeft, FaChevronRight, FaTimes } from "react-icons/fa";
-import Image from "next/image";
+import React from "react";
+// import { FaChevronLeft, FaChevronRight, FaTimes } from "react-icons/fa";
+// import Image from "next/image";
 
 // Gallery Data
-export const galleryData = [
-    { id: 1, path: "img1.jpg" },
-    { id: 2, path: "img2.jpg" },
-    { id: 3, path: "img3.jpg" },
-    { id: 4, path: "img4.jpg" },
-    { id: 5, path: "img5.jpg" },
-    { id: 6, path: "img6.jpg" },
-].sort((a, b) => a.id - b.id);
+// export const galleryData = [
+//     { id: 1, path: "img1.jpg" },
+//     { id: 2, path: "img2.jpg" },
+//     { id: 3, path: "img3.jpg" },
+//     { id: 4, path: "img4.jpg" },
+//     { id: 5, path: "img5.jpg" },
+//     { id: 6, path: "img6.jpg" },
+// ].sort((a, b) => a.id - b.id);
 
 const Gallery = () => {
-    const [selectedIndex, setSelectedIndex] = useState(null);
+    // const [selectedIndex, setSelectedIndex] = useState(null);
 
-    const handleNext = () =>
-        setSelectedIndex((prev) =>
-            prev !== null ? (prev + 1) % galleryData.length : 0
-        );
+    // const handleNext = () =>
+    //     setSelectedIndex((prev) =>
+    //         prev !== null ? (prev + 1) % galleryData.length : 0
+    //     );
 
-    const handlePrev = () =>
-        setSelectedIndex((prev) =>
-            prev !== null
-                ? (prev - 1 + galleryData.length) % galleryData.length
-                : galleryData.length - 1
-        );
+    // const handlePrev = () =>
+    //     setSelectedIndex((prev) =>
+    //         prev !== null
+    //             ? (prev - 1 + galleryData.length) % galleryData.length
+    //             : galleryData.length - 1
+    //     );
 
-    const closeModal = () => setSelectedIndex(null);
+    // const closeModal = () => setSelectedIndex(null);
 
     return (
-        <div className="py-10 bg-gradient-to-br from-[#f7fffb] to-[#e8f9f1]">
-            <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
+        <div>
+            {/* <h2 className="text-4xl md:text-5xl font-bold text-center mb-12 text-gray-800">
                 Our Gallery
             </h2>
-
-            {/* Masonry Grid */}
-            {/* Uniform Grid */}
+           
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 px-6 lg:px-20">
                 {galleryData.map((photo, index) => (
                     <div
@@ -50,16 +48,16 @@ const Gallery = () => {
                             alt={`Photo ${photo.id}`}
                             width={600}
                             height={400}
-                            className="w-full h-64 object-cover rounded-2xl" // 👈 fixed height
+                            className="w-full h-64 object-cover rounded-2xl" 
                         />
                     </div>
                 ))}
             </div>
 
-            {/* Modal */}
+            
             {selectedIndex !== null && (
                 <div className="fixed inset-0 flex justify-center items-center bg-black/40 backdrop-blur-md z-50">
-                    {/* Close Button */}
+                 
                     <button
                         onClick={closeModal}
                         className="absolute top-6 right-6 text-white text-3xl hover:text-gray-300 transition"
@@ -67,7 +65,7 @@ const Gallery = () => {
                         <FaTimes />
                     </button>
 
-                    {/* Left Arrow */}
+                  
                     <button
                         onClick={handlePrev}
                         className="absolute left-6 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full text-xl backdrop-blur-md"
@@ -75,14 +73,14 @@ const Gallery = () => {
                         <FaChevronLeft />
                     </button>
 
-                    {/* Image */}
+                  
                     <img
                         src={`/gallery/${galleryData[selectedIndex].path}`}
                         alt="Selected"
                         className="max-w-[90%] max-h-[85vh] rounded-2xl shadow-2xl border border-white/20"
                     />
 
-                    {/* Right Arrow */}
+                    
                     <button
                         onClick={handleNext}
                         className="absolute right-6 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full text-xl backdrop-blur-md"
@@ -90,7 +88,9 @@ const Gallery = () => {
                         <FaChevronRight />
                     </button>
                 </div>
-            )}
+            )} */}
+            <div className='text-4xl text-center font-semibold bg-white text-black mt-30 mb-30'>Coming Soon</div>
+
         </div>
     );
 };

@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 export default function Banner() {
@@ -57,11 +58,9 @@ export default function Banner() {
             We Always Put The Patients First
           </h1>
 
-          <div className="flex justify-center lg:justify-start">
-            <button className="bg-sky-500 text-white font-semibold py-3 px-8 sm:py-3.5 sm:px-10 md:py-4 md:px-12 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base shadow-lg">
-              Explore Our Treatments
-            </button>
-          </div>
+          <button className="bg-sky-500 text-white font-semibold py-3 px-8 sm:py-3.5 sm:px-10 md:py-4 md:px-12 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base  shadow-lg">
+            Explore Our Treatments
+          </button>
         </div>
       </div>
     </section>

@@ -12,8 +12,8 @@ const NavLinks = () => {
   // ✅ Navigation Data
   const navItems = [
     { name: "Home", href: "/", dropdown: false },
-    { name: "About Us", href: "/about", dropdown: false },
-    { name: "Our Team", href: "/team", dropdown: false },
+    { name: "About Us", href: "/about-us", dropdown: false },
+    { name: "Our Team", href: "/our-team", dropdown: false },
     { name: "Treatments", href: "/treatments", dropdown: false },
     { name: "Blogs", href: "/blog", dropdown: false },
     {
@@ -25,7 +25,7 @@ const NavLinks = () => {
         { name: "Videos", href: "/media/videos" },
       ],
     },
-    { name: "Contact Us", href: "/contact", dropdown: false },
+    { name: "Contact Us", href: "/contact-us", dropdown: false },
   ];
 
   // ✅ Call Info

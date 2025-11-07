@@ -134,7 +134,8 @@ export default function Footer() {
       <div className="bg-sky-500 mt-10 py-4 text-center text-sm">
         <p>
           <Link href="https://tekbooster.com/" target="_blank">
-            Design & Developed By Tek Booster (Digital Marketing Company)
+            Design & Developed By Tek Booster <br className="block sm:hidden" />
+            (Digital Marketing Company)
           </Link>
         </p>
       </div>

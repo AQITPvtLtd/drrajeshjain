@@ -26,8 +26,8 @@ export default function Faq() {
               <p className="text-[#00b4d8] font-semibold uppercase text-center lg:text-left">
                 Faq & Answers
               </p>
-              <h2 className="text-3xl md:text-4xl font-bold text-[#1e3b70] mt-2 mb-8 text-center lg:text-left">
-                Frequently Asked Any <br className="hidden md:block" /> Questions
+              <h2 className="text-3xl md:text-4xl font-bold text-[#1e3b70] mt-2 mb-8 text-center lg:text-left" style={{ fontFamily: "Roboto Slab, serif" }}>
+                Frequently Asked <br className="hidden md:block" /> Questions
               </h2>
 
               <div className="space-y-4">

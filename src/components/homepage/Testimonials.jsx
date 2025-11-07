@@ -26,12 +26,10 @@ export default function Testimonials() {
   return (
     <section className="py-16 bg-white">
       <div className="text-center mb-10">
-        <p className="text-[#00b4d8] font-semibold uppercase">
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1e3b70] mb-2 mt-2" style={{ fontFamily: "Roboto Slab, serif" }}>
           Our Testimonials
-        </p>
-        <h2 className="text-3xl md:text-4xl font-bold text-[#1e3b70] mt-2">
-          What Our Patients <br className="hidden md:block" /> Feedback
         </h2>
+        <div className="w-24 h-[4px] bg-[#0b2c5f] mx-auto mb-12 rounded-full"></div>
       </div>
 
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 px-4">

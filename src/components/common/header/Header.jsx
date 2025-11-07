@@ -29,16 +29,19 @@ const Header = () => {
       <Top />
 
       {/* 🔹 Normal Navbar (not sticky) */}
-      <Navbar />
+      {/* 🔹 Normal Navbar (not sticky) */}
+      <div className={`${isSticky ? "hidden md:block" : "block"}`}>
+        <Navbar />
+      </div>
+
 
       {/* 🔹 Sticky NavLinks only */}
       <div
         ref={navLinksRef}
-        className={`w-full z-50 transition-all duration-300 ${
-          isSticky
+        className={`w-full z-50 transition-all duration-300 ${isSticky
             ? "fixed top-0 left-0 bg-[#17396B] shadow-md" // same bg as before
             : "relative"
-        }`}
+          }`}
       >
         <NavLinks />
       </div>

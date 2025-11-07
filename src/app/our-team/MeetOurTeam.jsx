@@ -30,12 +30,10 @@ export default function MeetOurTeam() {
         <section className="bg-gradient-to-b from-[#f8fbff] to-white py-16 px-6 md:px-12 lg:px-20">
             {/* Heading */}
             <div className="text-center mb-12">
-                <p className="text-[#1e3b70] font-semibold uppercase tracking-wide border-b-2 border-[#1e3b70] inline-block pb-1">
-                    Our Special Doctors
-                </p>
-                <h2 className="text-3xl md:text-5xl font-bold text-[#1e3b70] mt-4 leading-snug">
-                    Meet Our Expert <br className="hidden md:block" /> Doctors
+                <h2 className="text-3xl md:text-5xl font-bold text-[#1e3b70] leading-snug" style={{ fontFamily: "Roboto Slab, serif" }}>
+                    Our Team
                 </h2>
+                <div className="w-24 h-[4px] bg-[#0b2c5f] mx-auto mb-12 rounded-full"></div>
             </div>
 
             <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 max-w-6xl mx-auto">
@@ -45,12 +43,14 @@ export default function MeetOurTeam() {
                         className="bg-white shadow-lg p-2 rounded-2xl overflow-hidden border border-gray-100 hover:shadow-2xl transition-all duration-300"
                     >
                         {/* Image */}
-                        <div className="relative w-full h-[320px]">
+                        <div className="relative w-full overflow-hidden rounded-2xl group">
                             <Image
                                 src={`/team/${td.image}`}
                                 alt={td.title || "team image"}
-                                fill
-                                className="object-cover rounded-lg"
+                                width={800}
+                                height={800}
+                                className="w-full h-auto rounded-2xl object-contain object-center transform transition-transform duration-500 ease-in-out group-hover:scale-105"
+                                priority
                             />
                         </div>
 

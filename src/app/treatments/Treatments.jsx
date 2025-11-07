@@ -51,15 +51,13 @@ export default function Treatments() {
   const lastService = services.slice(-1)[0];
 
   return (
-    <section className="w-full py-20 bg-white font-poppins">
+    <section className="w-full py-10 bg-white font-poppins">
       {/* Heading */}
-      <div className="text-center mb-16 px-4">
-        <h4 className="text-sky-500 font-semibold mb-2 underline underline-offset-4">
-          Our Services
-        </h4>
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a2a5b] leading-snug">
-          High Quality Serves For You
+      <div className="text-center mb-10 px-4">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a2a5b] leading-snug" style={{ fontFamily: "Roboto Slab, serif" }}>
+          Our Treatments
         </h2>
+        <div className="w-24 h-[4px] bg-[#0b2c5f] mx-auto mb-12 rounded-full"></div>
       </div>
 
       {/* Main Cards Grid */}

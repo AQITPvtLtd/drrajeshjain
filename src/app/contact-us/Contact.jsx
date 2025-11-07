@@ -12,8 +12,7 @@ const Contact = () => {
             {/* Title */}
             <div className="text-center py-12 px-4 sm:px-6 md:px-12 lg:px-24">
                 <h2
-                    className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 tracking-wide"
-                    style={{ fontFamily: "Roboto Slab, serif" }}
+                    className="text-3xl sm:text-4xl font-bold text-[#1e3b70] mb-4 tracking-wide" style={{ fontFamily: "Roboto Slab, serif" }}
                 >
                     Get in Touch
                 </h2>
@@ -21,79 +20,78 @@ const Contact = () => {
 
                 {/* Contact Info Cards */}
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+  {/* Email */}
+  <Link
+    href="mailto:drrajeshjainonococare@gmail.com"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f] block hover:bg-[#f9fafb]"
+  >
+    <div className="flex justify-center mb-4">
+      <FaEnvelope className="text-[#0b2c5f] text-3xl" />
+    </div>
+    <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
+      Email Support
+    </h3>
+    <p className="text-sm text-gray-600 text-center break-all">
+      drrajeshjainonococare@gmail.com
+    </p>
+  </Link>
 
-                    {/* Email */}
-                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f]">
-                        <div className="flex justify-center mb-4">
-                            <FaEnvelope className="text-[#0b2c5f] text-3xl" />
-                        </div>
-                        <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
-                            Email Support
-                        </h3>
-                        <Link
-                            href="mailto:drrajeshjainonococare@gmail.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className="text-sm text-gray-600 text-center break-all">
-                                drrajeshjainonococare@gmail.com
-                            </p>
-                        </Link>
-                    </div>
+  {/* Phone */}
+  <Link
+    href="tel:9810465644"
+    className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f] block hover:bg-[#f9fafb]"
+  >
+    <div className="flex justify-center mb-4">
+      <FaPhoneAlt className="text-[#0b2c5f] text-3xl" />
+    </div>
+    <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
+      Let's Talk
+    </h3>
+    <p className="text-sm text-gray-600 text-center">
+      +91 98104 65644
+    </p>
+  </Link>
 
-                    {/* Phone */}
-                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f]">
-                        <div className="flex justify-center mb-4">
-                            <FaPhoneAlt className="text-[#0b2c5f] text-3xl" />
-                        </div>
-                        <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
-                            Let's Talk
-                        </h3>
-                        <Link href="tel:9810465644">
-                            <p className="text-sm text-gray-600 text-center">
-                                +91 98104 65644
-                            </p>
-                        </Link>
-                    </div>
+  {/* Location */}
+  <Link
+    href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f] block hover:bg-[#f9fafb]"
+  >
+    <div className="flex justify-center mb-4">
+      <FaMapMarkerAlt className="text-[#0b2c5f] text-3xl" />
+    </div>
+    <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
+      Location
+    </h3>
+    <p className="text-sm text-gray-600 text-center leading-relaxed">
+      Pusa Rd, Radha Soami Satsang,
+      <br />
+      Rajinder Nagar, New Delhi, Delhi, 110005
+    </p>
+  </Link>
 
-                    {/* Location */}
-                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f]">
-                        <div className="flex justify-center mb-4">
-                            <FaMapMarkerAlt className="text-[#0b2c5f] text-3xl" />
-                        </div>
-                        <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
-                            Location
-                        </h3>
-                        <Link
-                            href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <p className="text-sm text-gray-600 text-center leading-relaxed">
-                                Pusa Rd, Radha Soami Satsang,
-                                <br />
-                                Rajinder Nagar, New Delhi, Delhi, 110005
-                            </p>
-                        </Link>
-                    </div>
+  {/* Timing */}
+  <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f] hover:bg-[#f9fafb]">
+    <div className="flex justify-center mb-4">
+      <FaClock className="text-[#0b2c5f] text-3xl" />
+    </div>
+    <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center">
+      Timing Schedule
+    </h3>
+    <p className="text-sm text-gray-600 text-center leading-relaxed">
+      <strong>
+        Max Hospital <br /> (All - Days)
+      </strong>
+      <br />
+      8:00 AM to 4:00 PM
+    </p>
+  </div>
+</div>
 
-                    {/* Timing */}
-                    <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f]">
-                        <div className="flex justify-center mb-4">
-                            <FaClock className="text-[#0b2c5f] text-3xl" />
-                        </div>
-                        <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center">
-                            Timing Schedule
-                        </h3>
-                        <p className="text-sm text-gray-600 text-center leading-relaxed">
-                            <strong>
-                                Max Hospital <br /> (All - Days)
-                            </strong>
-                            <br />
-                            8:00 AM to 4:00 PM
-                        </p>
-                    </div>
-                </div>
 
                 {/* Contact Form */}
                 <div>
@@ -102,7 +100,7 @@ const Contact = () => {
             </div>
 
             {/* Map Section */}
-            <div ref={sectionRef} className="mt-16 relative">
+            <div ref={sectionRef} className="mt-5 relative">
                 <h3 className="absolute top-6 sm:top-8 left-1/2 -translate-x-1/2 bg-white px-4 sm:px-6 py-1.5 sm:py-2 text-gray-800 text-sm sm:text-lg font-semibold rounded-full shadow-md z-10">
                     Find Us on the Map
                 </h3>

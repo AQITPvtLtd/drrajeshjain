@@ -67,8 +67,8 @@ export default function Appointment() {
     };
 
     return (
-        <section className='bg-white px-5'>
-            <div className="bg-[#1e3b70] rounded-xl p-6 md:p-10 max-w-6xl mx-auto mt-10 shadow-lg">
+        <section className="bg-white px-5 mt-8">
+            <div className="bg-[#1e3b70] rounded-xl p-6 md:p-10 max-w-6xl mx-auto shadow-lg">
                 <form
                     onSubmit={handleSubmit}
                     className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4"

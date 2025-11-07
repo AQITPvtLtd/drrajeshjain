@@ -5,60 +5,59 @@ import React from "react";
 
 export default function Banner() {
   return (
-    <section className="relative w-full overflow-hidden m-0 p-0">
-      {/* Hero Section container with min-heights */}
-      <div className="relative w-full flex flex-col items-start justify-start
-                      min-h-[50vh] sm:min-h-[70vh] md:min-h-[80vh] lg:min-h-[90vh] mt-0 pt-0">
-        {/* ---------- Large background image (absolute, shown on lg and up) ---------- */}
-        <div className="absolute inset-0 lg:block hidden">
-          <Image
-            src="/banner/asdf.png"
-            alt="Doctors - large"
-            fill
-            priority
-            className="object-contain object-top w-full h-full"
-            sizes="100vw"
-          />
-          {/* Optional overlay for text readability on large screens */}
-          <div className="absolute inset-0" />
-        </div>
+    <section className="relative w-full overflow-hidden m-0 p-0 bg-white leading-none">
+      {/* ✅ Desktop version: image + overlayed content */}
+      <div className="hidden lg:block relative w-full">
+        <Image
+          src="/banner/asdf.png"
+          alt="Doctors - large"
+          width={1600}
+          height={800}
+          priority
+          className="object-contain w-full h-auto"
+          sizes="100vw"
+        />
 
-        {/* ---------- Small image (in-flow, shown below lg) ---------- */}
-        <div className="w-full lg:hidden block">
-          {/* using explicit width/height so the image stays in document flow and pushes content below */}
-          <Image
-            src="/banner/asdfsmall.png"
-            alt="Doctors - small"
-            width={1400}
-            height={700}
-            priority
-            className="object-contain object-top w-full h-auto"
-            sizes="100vw"
-          />
-        </div>
-
-        {/* ---------- Content ---------- */}
-        {/* On small: relative, centered and below the small image.
-            On large: absolutely placed over the large background image on the left. */}
-        <div
-          className={`
-            relative z-20 px-5 sm:px-2
-            mt-6 lg:mt-0
-            mx-auto text-center
-            max-w-xl
-            lg:mx-0 lg:text-left
-            lg:absolute lg:top-28 lg:left-12 lg:max-w-lg
-          `}
-        >
-          <p className="text-sky-600 font-semibold text-sm sm:text-base tracking-wide">
+        {/* Overlay content (desktop only) */}
+        <div className="absolute inset-0 flex flex-col justify-center items-start px-12 text-left">
+          <p className="text-sky-600 font-semibold text-base tracking-wide">
             Quality Therapy Starts From Here
           </p>
 
-          <h1 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#24356E] leading-tight mb-6">
-            We Always Put The Patients First
+          <h1 className="text-4xl font-bold text-[#24356E] leading-tight mb-6">
+            We Always Put <br />
+            The Patients First
           </h1>
 
-          <button className="bg-sky-500 text-white font-semibold py-3 px-8 sm:py-3.5 sm:px-10 md:py-4 md:px-12 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base  shadow-lg">
+          <button className="bg-sky-500 text-white font-semibold py-4 px-12 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg">
+            Explore Our Treatments
+          </button>
+        </div>
+      </div>
+
+      {/* ✅ Mobile version: image first, then content below */}
+      <div className="block lg:hidden w-full relative flex flex-col items-center text-center">
+        <Image
+          src="/banner/asdfsmall.png"
+          alt="Doctors - small"
+          width={1000}
+          height={800}
+          priority
+          className="object-contain w-full h-auto"
+          sizes="100vw"
+        />
+
+        {/* Content below image (mobile only) */}
+        <div className="mt-6 px-5">
+          <p className="text-sky-600 font-semibold text-sm tracking-wide">
+            Quality Therapy Starts From Here
+          </p>
+
+          <h1 className="text-2xl sm:text-3xl font-bold text-[#24356E] leading-tight mb-4">
+            We Always Put <br className="md:hidden" /> The Patients First
+          </h1>
+
+          <button className="bg-sky-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base shadow-lg">
             Explore Our Treatments
           </button>
         </div>

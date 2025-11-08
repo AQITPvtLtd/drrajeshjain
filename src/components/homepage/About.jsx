@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
   return (
@@ -20,9 +21,13 @@ export default function About() {
             Dr Rajesh Jain is a distinguished surgical oncologist with over 26 years of experience. He is renowned for his pioneering surgical techniques and unwavering commitment to delivering the highest standard of care.
           </p>
 
-          <button className="mt-6 bg-sky-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-sky-600 transition-all">
+          <Link
+            href="/about-us"
+            className="mt-6 bg-sky-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-sky-600 transition-all inline-block text-center"
+          >
             Learn More
-          </button>
+          </Link>
+
         </div>
 
         {/* ===== Right Image Section ===== */}

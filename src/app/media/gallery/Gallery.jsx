@@ -75,7 +75,7 @@ const Gallery = () => {
                     {/* Left Arrow */}
                     <button
                         onClick={handlePrev}
-                        className="absolute left-6 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full text-xl backdrop-blur-md"
+                        className="absolute left-6 bg-white/20 hover:bg-white/40 text-white cursor-pointer p-3 rounded-full text-xl backdrop-blur-md"
                     >
                         <FaChevronLeft />
                     </button>
@@ -90,7 +90,7 @@ const Gallery = () => {
                     {/* Right Arrow */}
                     <button
                         onClick={handleNext}
-                        className="absolute right-6 bg-white/20 hover:bg-white/40 text-white p-3 rounded-full text-xl backdrop-blur-md"
+                        className="absolute right-6 bg-white/20 hover:bg-white/40 cursor-pointer text-white p-3 rounded-full text-xl backdrop-blur-md"
                     >
                         <FaChevronRight />
                     </button>

@@ -29,9 +29,13 @@ export default function Banner() {
             The Patients First
           </h1>
 
-          <button className="bg-sky-500 text-white font-semibold py-4 px-12 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg">
+          <Link
+            href="/treatments"
+            className="bg-sky-500 text-white font-semibold py-4 px-12 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg inline-block text-center"
+          >
             Explore Our Treatments
-          </button>
+          </Link>
+
         </div>
       </div>
 

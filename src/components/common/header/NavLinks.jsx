@@ -14,7 +14,7 @@ const NavLinks = () => {
     { name: "About Us", href: "/about-us", dropdown: false },
     { name: "Our Team", href: "/our-team", dropdown: false },
     { name: "Treatments", href: "/treatments", dropdown: false },
-    { name: "Blogs", href: "/blog", dropdown: false },
+    { name: "Blogs", href: "/blogs", dropdown: false },
     {
       name: "Media",
       href: "#",

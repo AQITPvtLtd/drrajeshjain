@@ -2,11 +2,10 @@
 import React from "react";
 import {
   FaFacebookF,
-  FaPinterestP,
   FaLinkedinIn,
+  FaYoutube
 } from "react-icons/fa";
-import { FaLocationDot, FaPhone, FaEnvelope, FaSquareXTwitter } from "react-icons/fa6";
-import { HiOutlineLocationMarker, HiOutlineMail, HiOutlinePhone } from "react-icons/hi";
+import { FaLocationDot, FaPhone, FaEnvelope, FaSquareXTwitter, FaInstagram } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -21,30 +20,52 @@ export default function Footer() {
             <Image src="/logo.png" alt="" width={150} height={60} />
           </div>
           <div className="flex gap-5">
-            <a
+            {/* Facebook */}
+            <Link
               href="#"
-              className="bg-white/10 hover:bg-sky-500 p-3 rounded-full transition"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
             >
-              <FaFacebookF size={18} />
-            </a>
-            <a
+              <FaFacebookF size={18} className="text-[#1877F2]" />
+            </Link>
+
+            {/* Instagram */}
+            <Link
               href="#"
-              className="bg-white/10 hover:bg-sky-500 p-3 rounded-full transition"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
             >
-              <FaSquareXTwitter size={18} />
-            </a>
-            <a
+              <FaInstagram
+                size={18}
+                className="bg-clip-text bg-gradient-to-tr from-[#feda75] text-[#d62976] to-[#962fbf]"
+              />
+            </Link>
+
+            {/* LinkedIn */}
+            <Link
               href="#"
-              className="bg-white/10 hover:bg-sky-500 p-3 rounded-full transition"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
             >
-              <FaPinterestP size={18} />
-            </a>
-            <a
+              <FaLinkedinIn size={18} className="text-[#0077B5]" />
+            </Link>
+
+            {/* Twitter (X) */}
+            <Link
               href="#"
-              className="bg-white/10 hover:bg-sky-500 p-3 rounded-full transition"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
             >
-              <FaLinkedinIn size={18} />
-            </a>
+              <FaSquareXTwitter size={18} className="text-black" />
+            </Link>
+      
+            <Link
+              href="#"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+            >
+              <FaYoutube size={18} className="text-[#E60023]" />
+            </Link>
           </div>
         </div>
 
@@ -56,7 +77,6 @@ export default function Footer() {
               {/* Quick Links */}
               <div>
                 <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
-                <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
                 <ul className="grid grid-cols-2 gap-x-6 text-sm">
                   <div className="space-y-2">
                     <li><Link href="/" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Home</Link></li>
@@ -76,7 +96,6 @@ export default function Footer() {
               {/* Treatments */}
               <div>
                 <h2 className="text-2xl font-semibold mb-4">Treatments</h2>
-                <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
                 <ul className="grid grid-cols-2 gap-x-6 text-sm">
                   <div className="space-y-2">
                     <li><Link href="/team/dr-rajesh-jain" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Surgical Oncology</Link></li>
@@ -94,16 +113,11 @@ export default function Footer() {
               {/* Contact Info */}
               <div>
                 <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
-                <div className="h-0.5 w-14 bg-sky-500 mb-6"></div>
                 <ul className="space-y-3 text-sm">
-                  <li className="flex items-start gap-3">
-                    <FaLocationDot className="text-sky-400 mt-1" />
-                    <Link href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7" target="_blank" className="hover:text-sky-400">
-                      <p className="">
-                        Pusa Rd, Radha Soami Satsang,
-
-                        Rajinder Nagar, New Delhi, Delhi, 110005
-                      </p>
+                  <li className="flex items-center gap-3">
+                    <FaPhone className="text-sky-400" />
+                    <Link href="tel:+919810465644" className="hover:text-sky-400">
+                      +91 98104 65644
                     </Link>
                   </li>
 
@@ -114,10 +128,14 @@ export default function Footer() {
                     </Link>
                   </li>
 
-                  <li className="flex items-center gap-3">
-                    <FaPhone className="text-sky-400" />
-                    <Link href="tel:+919810465644" className="hover:text-sky-400">
-                      +91 98104 65644
+                  <li className="flex items-start gap-3">
+                    <FaLocationDot className="text-sky-400 mt-1" />
+                    <Link href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7" target="_blank" className="hover:text-sky-400">
+                      <p className="">
+                        Pusa Rd, Radha Soami Satsang,
+
+                        Rajinder Nagar, New Delhi, Delhi, 110005
+                      </p>
                     </Link>
                   </li>
                 </ul>

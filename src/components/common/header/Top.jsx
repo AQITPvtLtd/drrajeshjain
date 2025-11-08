@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
-import { FaSquareXTwitter } from "react-icons/fa6";
+import { FaSquareXTwitter, FaInstagram } from "react-icons/fa6";
 import { IoTimeOutline } from "react-icons/io5";
 import Link from "next/link";
 
@@ -29,20 +29,58 @@ const Top = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center sm:justify-end space-y-2 sm:space-y-0 sm:space-x-4 mt-2 sm:mt-0">
 
           {/* Social Icons */}
-          <div className="flex items-center justify-center space-x-3">
-            <Link href="#" className="hover:text-sky-400 transition">
-              <FaFacebookF />
+          <div className="flex items-center justify-center gap-4">
+            {/* Facebook */}
+            <Link
+              href="#"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+              aria-label="Facebook"
+            >
+              <FaFacebookF size={15} className="text-[#1877F2]" />
             </Link>
-            <Link href="#" className="hover:text-sky-400 transition">
-              <FaSquareXTwitter />
+
+            {/* Instagram */}
+            <Link
+              href="#"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+              aria-label="Instagram"
+            >
+              <FaInstagram size={15} className="text-[#d62976]" />
             </Link>
-            <Link href="#" className="hover:text-sky-400 transition">
-              <FaLinkedinIn />
+
+            {/* LinkedIn */}
+            <Link
+              href="#"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn size={15} className="text-[#0077B5]" />
             </Link>
-            <Link href="#" className="hover:text-sky-400 transition">
-              <FaYoutube />
+
+            {/* Twitter (X) */}
+            <Link
+              href="#"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+              aria-label="Twitter"
+            >
+              <FaSquareXTwitter size={15} className="text-black" />
+            </Link>
+
+            {/* YouTube */}
+            <Link
+              href="#"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+              aria-label="YouTube"
+            >
+              <FaYoutube size={15} className="text-[#FF0000]" />
             </Link>
           </div>
+
 
           {/* Divider (desktop only) */}
           <div className="hidden sm:block w-px h-5 bg-white/30"></div>

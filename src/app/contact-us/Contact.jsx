@@ -10,7 +10,7 @@ const Contact = () => {
     return (
         <section className="bg-gradient-to-br from-[#fff8f8] via-[#fefefe] to-[#f9f9f9] relative overflow-hidden">
             {/* Title */}
-            <div className="text-center py-12 px-4 sm:px-6 md:px-12 lg:px-24">
+            <div className="text-center py-12 px-4 lg:px-12">
                 <h2
                     className="text-3xl sm:text-4xl font-bold text-[#1e3b70] mb-4 tracking-wide" style={{ fontFamily: "Roboto Slab, serif" }}
                 >
@@ -18,14 +18,14 @@ const Contact = () => {
                 </h2>
                 <div className="w-20 sm:w-24 h-1 bg-[#0b2c5f] mx-auto mb-10 rounded-full"></div>
 
-                {/* Contact Info Cards */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+               {/* Contact Info Cards */}
+<div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 gap-4">
   {/* Email */}
   <Link
     href="mailto:drrajeshjainonococare@gmail.com"
     target="_blank"
     rel="noopener noreferrer"
-    className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f] block hover:bg-[#f9fafb]"
+    className="bg-white shadow-md rounded-2xl py-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#0b2c5f] block hover:bg-[#f9fafb]"
   >
     <div className="flex justify-center mb-4">
       <FaEnvelope className="text-[#0b2c5f] text-3xl" />
@@ -33,7 +33,7 @@ const Contact = () => {
     <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
       Email Support
     </h3>
-    <p className="text-sm text-gray-600 text-center break-all">
+    <p className="text-sm text-gray-600 text-center whitespace-nowrap overflow-x-auto no-scrollbar">
       drrajeshjainonococare@gmail.com
     </p>
   </Link>
@@ -49,9 +49,7 @@ const Contact = () => {
     <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
       Let's Talk
     </h3>
-    <p className="text-sm text-gray-600 text-center">
-      +91 98104 65644
-    </p>
+    <p className="text-sm text-gray-600 text-center">+91 98104 65644</p>
   </Link>
 
   {/* Location */}
@@ -91,6 +89,7 @@ const Contact = () => {
     </p>
   </div>
 </div>
+
 
 
                 {/* Contact Form */}

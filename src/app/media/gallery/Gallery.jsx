@@ -67,7 +67,7 @@ const Gallery = () => {
                     {/* Close Button */}
                     <button
                         onClick={closeModal}
-                        className="absolute top-6 right-6 text-white text-3xl hover:text-gray-300 transition"
+                        className="absolute top-6 right-6 cursor-pointer text-white text-3xl hover:text-gray-300 transition"
                     >
                         <FaTimes />
                     </button>

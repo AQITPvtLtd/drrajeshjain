@@ -70,7 +70,7 @@ const NavLinks = () => {
           >
             <FaPhoneAlt />
             <span className="text-sm lg:text-base">
-              Call Anytime:
+              Call Us:
               <strong className="ml-1 text-base">{callData.display}</strong>
             </span>
           </Link>
@@ -146,7 +146,7 @@ const NavLinks = () => {
             >
               <FaPhoneAlt />
               <span>
-                Call Anytime:
+                Call Us:
                 <strong className="ml-1">{callData.display}</strong>
               </span>
             </Link>

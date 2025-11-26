@@ -52,12 +52,9 @@ export default function Banner() {
 
         {/* Content below image (mobile only) */}
         <div className="mt-6 px-5">
-          <p className="text-sky-600 font-semibold text-sm tracking-wide">
-            Quality Therapy Starts From Here
-          </p>
 
           <h1 className="text-2xl sm:text-3xl font-bold text-[#24356E] leading-tight mb-4">
-            We Always Put <br className="md:hidden" /> The Patients First
+            Expert Care You Can Trust
           </h1>
 
           <button className="bg-sky-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base shadow-lg">

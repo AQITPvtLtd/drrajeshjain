@@ -57,8 +57,12 @@ export default function Banner() {
             Expert Care You Can Trust
           </h1>
 
-          <button className="bg-sky-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base shadow-lg">
-            Explore Our Treatments
+          <p className="text-black font-semibold text-base tracking-wide mb-5">
+            From diagnosis to treatment, we provide clear guidance, emotional support, and world-class expertise.
+          </p>
+
+          <button href="/contact-us" className="bg-sky-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base shadow-lg">
+            Book Your Consultation
           </button>
         </div>
       </div>

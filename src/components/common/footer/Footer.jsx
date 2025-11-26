@@ -106,14 +106,14 @@ export default function Footer() {
                 <h2 className="text-2xl font-semibold mb-4">Treatments</h2>
                 <ul className="grid grid-cols-2 gap-x-6 text-sm">
                   <div className="space-y-2">
-                    <li><Link href="/team/dr-rajesh-jain" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Surgical Oncology</Link></li>
-                    <li><Link href="/team/dr-ishan-mohan" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Head & Neck Oncosurgery</Link></li>
-                    <li><Link href="/team/dr-himanshu-gupta" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Plastic & Onco Reconstructive Surgery</Link></li>
+                    <li><Link href="/our-team/dr-rajesh-jain" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Surgical Oncology</Link></li>
+                    <li><Link href="/our-team/dr-ishan-mohan" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Head & Neck Oncosurgery</Link></li>
+                    <li><Link href="/our-team/dr-himanshu-gupta" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Plastic & Onco Reconstructive Surgery</Link></li>
                   </div>
 
                   <div className="space-y-2">
-                    <li><Link href="/team/dr-pranjal-kulshreshtha" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Breast Oncological Surgery</Link></li>
-                    <li><Link href="/team/dr-shruti-bhatia" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Gynaecological Surgical Oncology</Link></li>
+                    <li><Link href="/our-team/dr-pranjal-kulshreshtha" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Breast Oncological Surgery</Link></li>
+                    <li><Link href="/ourteam/dr-shruti-bhatia" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Gynaecological Surgical Oncology</Link></li>
                   </div>
                 </ul>
               </div>

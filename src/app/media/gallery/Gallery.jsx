@@ -5,12 +5,12 @@ import Image from "next/image";
 
 // Gallery Data
 export const galleryData = [
-    { id: 1, path: "img1.png" },
-    { id: 2, path: "img2.png" },
-    { id: 3, path: "img3.png" },
-    { id: 4, path: "img4.png" },
-    { id: 5, path: "img5.png" },
-    { id: 6, path: "img6.png" },
+    { id: 1, path: "frame1.png" },
+    { id: 2, path: "frame2.png" },
+    { id: 3, path: "frame3.png" },
+    { id: 4, path: "frame4.png" },
+    { id: 5, path: "frame5.png" },
+    { id: 6, path: "frame6.png" },
 ].sort((a, b) => a.id - b.id);
 
 const Gallery = () => {

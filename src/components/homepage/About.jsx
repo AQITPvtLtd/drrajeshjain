@@ -17,8 +17,8 @@ export default function About() {
             Dr. Rajesh Kumar Jain
           </h1>
 
-          <p className="text-gray-600 leading-relaxed max-w-lg">
-            Dr Rajesh Jain is a distinguished surgical oncologist with over 26 years of experience. He is renowned for his pioneering surgical techniques and unwavering commitment to delivering the highest standard of care.
+          <p className="text-gray-600 leading-relaxed max-w-lg text-justify">
+            We provide expert medical care with compassion, guiding every patient with personalized attention, advanced techniques, and support, ensuring a confident, informed, and comfortable healthcare experience at every step.
           </p>
 
           <Link

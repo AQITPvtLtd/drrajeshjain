@@ -30,7 +30,7 @@ export default function OurTeam() {
         <section className="bg-gradient-to-b from-[#f8fbff] to-white py-16 px-6 md:px-12 lg:px-20">
             {/* Heading */}
             <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-5xl font-bold text-[#1e3b70] mt-4 leading-snug" style={{ fontFamily: "Roboto Slab, serif" }}>
+                <h2 className="text-3xl md:text-4xl font-bold text-[#1e3b70] mt-4 leading-snug" style={{ fontFamily: "Roboto Slab, serif" }}>
                     Our Team
                 </h2>
                 <div className="w-24 h-[4px] bg-[#0b2c5f] mx-auto mb-12 rounded-full"></div>

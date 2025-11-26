@@ -17,7 +17,7 @@ export default function Faq() {
   const toggleFaq = (id) => setActiveIndex(activeIndex === id ? null : id);
 
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-white px-5 md:px-10">
       <div className="container mx-auto px-4 relative">
         <div className="lg:pr-[520px]">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-10">

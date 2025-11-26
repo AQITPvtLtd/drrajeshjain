@@ -7,14 +7,10 @@ export default function MissionVision() {
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         {/* ===== Heading ===== */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900" style={{ fontFamily: "Roboto Slab, serif" }}>
             Our <span className="text-blue-600">Mission</span> &{" "}
             <span className="text-blue-600">Vision</span>
           </h2>
-          <p className="mt-4 text-gray-600 max-w-2xl mx-auto text-lg">
-            We turn ideas into reality through excellence, ethics, and
-            innovation — shaping a better tomorrow for all.
-          </p>
         </div>
 
         {/* ===== Mission & Vision Cards ===== */}
@@ -26,19 +22,12 @@ export default function MissionVision() {
               <div className="w-[98%] mx-auto h-[6px] bg-gradient-to-r from-blue-600 to-blue-400 rounded-b-full"></div>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: "Roboto Slab, serif" }}>
               Our Mission
             </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Our mission is to deliver transformative, value-driven solutions
-              that empower individuals and organizations to grow, innovate, and
-              excel in today’s fast-evolving world. We champion integrity,
-              customer satisfaction, and sustainable development in all our
-              endeavors.
+            <p className="text-gray-700 leading-relaxed text-justify">
+              Our mission is to provide safe, advanced, and compassionate cancer care through a team of experienced specialists. We work together to offer accurate diagnosis, personalized treatment plans, and complete emotional support to patients and their families. Every member of our team is committed to giving patients comfort, clarity, and high-quality care at every stage of their journey.
             </p>
-            <div className="mt-6 pt-6 border-t border-gray-200 text-blue-600 italic">
-              “Empowering growth through innovation and trust.”
-            </div>
           </div>
 
           {/* ===== Vision Card ===== */}
@@ -48,18 +37,12 @@ export default function MissionVision() {
               <div className="w-[98%] mx-auto h-[6px] bg-gradient-to-r from-blue-600 to-blue-400 rounded-b-full"></div>
             </div>
 
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">
+            <h3 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: "Roboto Slab, serif" }}>
               Our Vision
             </h3>
-            <p className="text-gray-700 leading-relaxed">
-              Our vision is to be a globally trusted leader that shapes a
-              brighter, more connected future through innovation, collaboration,
-              and ethical leadership — creating meaningful impact across
-              businesses and communities worldwide.
+            <p className="text-gray-700 leading-relaxed text-justify">
+              Our vision is to become a trusted centre of excellence in cancer care, where expert doctors from different specialities come together to improve outcomes, bring hope, and make world-class treatment accessible to everyone. We aim to combine technology, teamwork, and empathy to help patients live healthier, stronger, and longer lives.
             </p>
-            <div className="mt-6 pt-6 border-t border-gray-200 text-blue-600 italic">
-              “Leading with purpose, inspiring the future.”
-            </div>
           </div>
         </div>
       </div>

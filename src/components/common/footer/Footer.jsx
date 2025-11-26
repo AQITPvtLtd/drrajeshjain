@@ -5,6 +5,7 @@ import {
   FaLinkedinIn,
   FaYoutube
 } from "react-icons/fa";
+import { FcGoogle } from "react-icons/fc";
 import { FaLocationDot, FaPhone, FaEnvelope, FaSquareXTwitter, FaInstagram } from "react-icons/fa6";
 import Image from "next/image";
 import Link from "next/link";
@@ -16,13 +17,20 @@ export default function Footer() {
       <div className="container mx-auto px-6 md:px-12">
         {/* Logo & Social Icons */}
         <div className="flex flex-col md:flex-row items-center justify-between border-b border-sky-500 pb-8">
-          <div className="flex items-center gap-2 mb-6 md:mb-0">
-            <Image src="/logo.png" alt="" width={150} height={60} />
-          </div>
+          <Link href="/" className="flex items-center gap-2 mb-6 md:mb-0">
+            <Image
+              src="/logo/footerlogo.png"
+              alt="Footer Logo"
+              width={220}      // increase width
+              height={90}      // increase height
+              className="w-auto h-auto"
+            />
+          </Link>
+
           <div className="flex gap-5">
             {/* Facebook */}
             <Link
-              href="#"
+              href="https://www.facebook.com/people/Dr-Rajesh-Jain/61581814087397/"
               target="_blank"
               className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
             >
@@ -31,7 +39,7 @@ export default function Footer() {
 
             {/* Instagram */}
             <Link
-              href="#"
+              href="https://www.instagram.com/drrajeshjainoncocare/"
               target="_blank"
               className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
             >
@@ -43,28 +51,28 @@ export default function Footer() {
 
             {/* LinkedIn */}
             <Link
-              href="#"
+              href="https://www.linkedin.com/company/dr-rajesh-jain/about/"
               target="_blank"
               className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
             >
               <FaLinkedinIn size={18} className="text-[#0077B5]" />
             </Link>
 
-            {/* Twitter (X) */}
             <Link
-              href="#"
-              target="_blank"
-              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
-            >
-              <FaSquareXTwitter size={18} className="text-black" />
-            </Link>
-      
-            <Link
-              href="#"
+              href="https://www.youtube.com/@drrajeshjainoncologyteam?si=gJie7FHhlCWWOfEm"
               target="_blank"
               className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
             >
               <FaYoutube size={18} className="text-[#E60023]" />
+            </Link>
+
+            {/* Google */}
+            <Link
+              href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7"
+              target="_blank"
+              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+            >
+              <FcGoogle size={20} />
             </Link>
           </div>
         </div>

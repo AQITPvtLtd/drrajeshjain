@@ -54,7 +54,7 @@ export default function Treatments() {
     <section className="w-full py-10 bg-white font-poppins">
       {/* Heading */}
       <div className="text-center mb-10 px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#1a2a5b] leading-snug" style={{ fontFamily: "Roboto Slab, serif" }}>
+        <h2 className="text-3xl md:text-4xl font-bold text-[#1a2a5b] leading-snug" style={{ fontFamily: "Roboto Slab, serif" }}>
           Treatments
         </h2>
         <div className="w-24 h-[4px] bg-[#0b2c5f] mx-auto mb-12 rounded-full"></div>

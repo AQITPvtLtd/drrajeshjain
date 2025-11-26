@@ -3,6 +3,7 @@ import React from "react";
 import { FaFacebookF, FaLinkedinIn, FaYoutube } from "react-icons/fa";
 import { FaSquareXTwitter, FaInstagram } from "react-icons/fa6";
 import { IoTimeOutline } from "react-icons/io5";
+import { FcGoogle } from "react-icons/fc";
 import Link from "next/link";
 
 const Top = () => {
@@ -32,55 +33,54 @@ const Top = () => {
           <div className="flex items-center justify-center gap-4">
             {/* Facebook */}
             <Link
-              href="#"
+              href="https://www.facebook.com/people/Dr-Rajesh-Jain/61581814087397/"
               target="_blank"
-              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+              className="bg-white shadow-md p-2.5 rounded-full transition transform hover:scale-110 hover:shadow-xl"
               aria-label="Facebook"
             >
-              <FaFacebookF size={15} className="text-[#1877F2]" />
+              <FaFacebookF size={18} className="text-[#1877F2]" />
             </Link>
 
             {/* Instagram */}
             <Link
-              href="#"
+              href="https://www.instagram.com/drrajeshjainoncocare/"
               target="_blank"
-              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+              className="bg-white shadow-md p-2.5 rounded-full transition transform hover:scale-110 hover:shadow-xl"
               aria-label="Instagram"
             >
-              <FaInstagram size={15} className="text-[#d62976]" />
+              <FaInstagram size={18} className="text-[#d62976]" />
             </Link>
 
             {/* LinkedIn */}
             <Link
-              href="#"
+              href="https://www.linkedin.com/company/dr-rajesh-jain/about/"
               target="_blank"
-              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+              className="bg-white shadow-md p-2.5 rounded-full transition transform hover:scale-110 hover:shadow-xl"
               aria-label="LinkedIn"
             >
-              <FaLinkedinIn size={15} className="text-[#0077B5]" />
-            </Link>
-
-            {/* Twitter (X) */}
-            <Link
-              href="#"
-              target="_blank"
-              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
-              aria-label="Twitter"
-            >
-              <FaSquareXTwitter size={15} className="text-black" />
+              <FaLinkedinIn size={18} className="text-[#0077B5]" />
             </Link>
 
             {/* YouTube */}
             <Link
-              href="#"
+              href="https://www.youtube.com/@drrajeshjainoncologyteam?si=gJie7FHhlCWWOfEm"
               target="_blank"
-              className="bg-white shadow-md p-3 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+              className="bg-white shadow-md p-2.5 rounded-full transition transform hover:scale-110 hover:shadow-xl"
               aria-label="YouTube"
             >
-              <FaYoutube size={15} className="text-[#FF0000]" />
+              <FaYoutube size={18} className="text-[#FF0000]" />
+            </Link>
+
+            {/* Google */}
+            <Link
+              href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7"
+              target="_blank"
+              className="bg-white shadow-md p-2.5 rounded-full transition transform hover:scale-110 hover:shadow-xl"
+              aria-label="Google"
+            >
+              <FcGoogle size={20} />
             </Link>
           </div>
-
 
           {/* Divider (desktop only) */}
           <div className="hidden sm:block w-px h-5 bg-white/30"></div>

@@ -9,15 +9,15 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-col sm:flex-row justify-between items-center px-4 py-3 sm:py-4 gap-4 sm:gap-0">
 
         {/* ✅ Left: Logo */}
-        <div className="flex items-center space-x-2">
+        <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="/logo/jsrlogo.png" // replace with your logo path
+            src="/logo/logo.png"
             alt=""
-            width={55}
-            height={55}
+            width={300}     // Bigger width
+            height={300}    // Bigger height
             className="object-contain"
           />
-        </div>
+        </Link>
 
         {/* ✅ Right: Contact Info */}
         <div className="flex flex-col sm:flex-row items-center sm:space-x-8 text-center sm:text-left">

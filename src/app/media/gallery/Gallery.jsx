@@ -33,7 +33,7 @@ const Gallery = () => {
     return (
         <div className="py-10 bg-gradient-to-br from-[#f7fffb] to-[#e8f9f1]">
             <h2
-                className="text-4xl md:text-5xl font-bold text-center mb-4 text-[#1e3b70]"
+                className="text-3xl md:text-4xl font-bold text-center mb-4 text-[#1e3b70]"
                 style={{ fontFamily: "Roboto Slab, serif" }}
             >
                 Our Gallery

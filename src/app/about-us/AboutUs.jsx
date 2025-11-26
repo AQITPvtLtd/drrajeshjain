@@ -8,7 +8,7 @@ export default function AboutUs() {
     <section className="mt-10">
       {/* ===== About Us Heading ===== */}
       <h2
-        className="text-4xl md:text-5xl font-bold text-center text-[#24356E] relative"
+        className="text-3xl md:text-4xl font-bold text-center text-[#24356E] relative"
         style={{ fontFamily: "Roboto Slab, serif" }}
       >
         About Us
@@ -20,7 +20,7 @@ export default function AboutUs() {
       {/* ===== About Section Content ===== */}
       <section className="relative w-full py-5 md:py-10 overflow-hidden">
         <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col-reverse md:flex-row items-center justify-between gap-12">
-          
+
           {/* ===== Left Content ===== */}
           <div className="w-full md:w-1/2 space-y-5">
             <p className="text-sky-600 font-semibold text-lg border-b-2 border-sky-500 inline-block pb-1">
@@ -31,15 +31,9 @@ export default function AboutUs() {
               Dr. Rajesh Kumar Jain
             </h1>
 
-            <p className="text-gray-600 leading-relaxed max-w-lg">
-              Dr Rajesh Jain is a distinguished surgical oncologist with over 26 years of experience. 
-              He is renowned for his pioneering surgical techniques and unwavering commitment to delivering 
-              the highest standard of care.
+            <p className="text-gray-600 leading-relaxed max-w-lg text-justify">
+              We provide expert medical care with compassion, guiding every patient with personalized attention, advanced techniques, and support, ensuring a confident, informed, and comfortable healthcare experience at every step.
             </p>
-
-            <button className="mt-6 bg-sky-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-sky-600 transition-all">
-              Learn More
-            </button>
           </div>
 
           {/* ===== Right Image Section ===== */}

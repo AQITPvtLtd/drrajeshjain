@@ -20,22 +20,21 @@ export default function Banner() {
 
         {/* Overlay content (desktop only) */}
         <div className="absolute inset-0 flex flex-col justify-center items-start px-12 text-left">
-          <p className="text-sky-600 font-semibold text-base tracking-wide">
-            Quality Therapy Starts From Here
-          </p>
 
-          <h1 className="text-4xl font-bold text-[#24356E] leading-tight mb-6">
-            We Always Put <br />
-            The Patients First
+          <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-[#24356E] leading-tight mb-6" style={{ fontFamily: "Roboto Slab, serif" }}>
+            Expert Care You Can Trust
           </h1>
 
+          <p className="text-black font-semibold text-base tracking-wide pb-5">
+            From diagnosis to treatment, we provide clear guidance, <br /> emotional support, and world-class expertise.
+          </p>
+
           <Link
-            href="/treatments"
+            href="/contact-us"
             className="bg-sky-500 text-white font-semibold py-4 px-12 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg inline-block text-center"
           >
-            Explore Our Treatments
+            Book Your Consultation
           </Link>
-
         </div>
       </div>
 

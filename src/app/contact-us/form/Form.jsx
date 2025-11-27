@@ -98,7 +98,7 @@ export default function Form() {
 
     return (
         <section className="py-16 px-0 md:px-6">
-            <div className="max-w-3xl bg-[#1e3b70] mx-auto backdrop-blur-xl rounded-2xl shadow-2xl p-3 md:p-7 border border-white/20">
+            <div className="max-w-3xl bg-[#1e3b70] mx-auto backdrop-blur-xl rounded-2xl shadow-2xl p-3 md:p-5 border border-white/20">
 
                 <h2 className="text-center text-white text-3xl font-bold mb-8" style={{ fontFamily: "Roboto Slab, serif" }}>
                     Book an Appointment

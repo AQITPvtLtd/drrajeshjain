@@ -88,7 +88,7 @@ const Top = () => {
           {/* Appointment Button */}
           <Link
             href="/contact-us"
-            className="bg-[#00D7FF] hover:bg-[#00bfe6] text-white font-semibold px-5 py-2 rounded transition inline-block"
+            className="bg-[#14adac] hover:bg-[#0F8A89] text-white font-semibold px-5 py-2 rounded transition inline-block"
           >
             Appointment
           </Link>

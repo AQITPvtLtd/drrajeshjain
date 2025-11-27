@@ -121,7 +121,7 @@ export default function Form() {
                                 onChange={handleChange}
                                 placeholder=" "   // <-- Important (single space)
                                 className="w-full bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-4 
-    focus:ring-4 focus:ring-cyan-400 focus:bg-white transition-all outline-none 
+    focus:ring-4 focus:ring-[#14adac] focus:bg-white transition-all outline-none 
     peer"
                             />
                             <label
@@ -147,7 +147,7 @@ export default function Form() {
                             value={formData.doctor}
                             onChange={handleChange}
                             className="w-full appearance-none bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-10 
-                            focus:ring-4 focus:ring-cyan-400 focus:bg-white transition-all outline-none"
+                            focus:ring-4 focus:ring-[#14adac] focus:bg-white transition-all outline-none"
                             required
                         >
                             <option value="">Choose Doctor</option>
@@ -175,7 +175,7 @@ export default function Form() {
                             placeholder="Your Message"
                             rows={1}
                             className="w-full bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-4 
-        focus:ring-4 focus:ring-cyan-400 focus:bg-white transition-all outline-none 
+        focus:ring-4 focus:ring-[#14adac] focus:bg-white transition-all outline-none 
         peer resize-none"
                         ></textarea>
 
@@ -204,8 +204,8 @@ export default function Form() {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="bg-gradient-to-r cursor-pointer from-cyan-400 to-blue-500 text-white font-semibold py-3 rounded-xl 
-                        shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 flex justify-center items-center gap-2 
+                        className="cursor-pointer bg-[#14adac] text-white font-semibold py-3 rounded-xl 
+                        shadow-lg hover:bg-[#0F8A89] transition-all duration-300 flex justify-center items-center gap-2 
                         hover:scale-105 active:scale-95"
                     >
                         {loading ? <ClipLoader color="#fff" size={20} /> : "Make Appointment"}

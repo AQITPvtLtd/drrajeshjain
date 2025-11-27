@@ -23,7 +23,7 @@ export default function About() {
 
           <Link
             href="/about-us"
-            className="mt-6 bg-sky-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-sky-600 transition-all inline-block text-center"
+            className="mt-6 bg-[#14adac] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#0F8A89] transition-all inline-block text-center"
           >
             Know More
           </Link>

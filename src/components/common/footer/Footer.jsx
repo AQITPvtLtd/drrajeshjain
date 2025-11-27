@@ -16,7 +16,7 @@ export default function Footer() {
       {/* Top Section */}
       <div className="container mx-auto px-6 md:px-12">
         {/* Logo & Social Icons */}
-        <div className="flex flex-col md:flex-row items-center justify-between border-b border-sky-500 pb-8">
+        <div className="flex flex-col md:flex-row items-center justify-between border-b border-[#14adac] pb-8">
           <Link href="/" className="flex items-center gap-2 mb-6 md:mb-0">
             <Image
               src="/logo/footerlogo.png"
@@ -87,16 +87,16 @@ export default function Footer() {
                 <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
                 <ul className="grid grid-cols-2 gap-x-6 text-sm">
                   <div className="space-y-2">
-                    <li><Link href="/" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>Home</Link></li>
-                    <li><Link href="/about-us" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>About Us</Link></li>
-                    <li><Link href="/our-team" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>Our Team</Link></li>
-                    <li><Link href="/contact-us" className="flex items-center gap-2 hover:text-sky-400"><span>›</span>Contact Us</Link></li>
+                    <li><Link href="/" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Home</Link></li>
+                    <li><Link href="/about-us" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>About Us</Link></li>
+                    <li><Link href="/our-team" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Our Team</Link></li>
+                    <li><Link href="/contact-us" className="flex items-center gap-2 hover:text-[#14adac]"><span>›</span>Contact Us</Link></li>
                   </div>
 
                   <div className="space-y-2">
-                    <li><Link href="/blogs" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>Blogs</Link></li>
-                    <li><Link href="/media/gallery" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>Gallery</Link></li>
-                    <li><Link href="/media/videos" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>Videos</Link></li>
+                    <li><Link href="/blogs" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Blogs</Link></li>
+                    <li><Link href="/media/gallery" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Gallery</Link></li>
+                    <li><Link href="/media/videos" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Videos</Link></li>
                   </div>
                 </ul>
               </div>
@@ -106,14 +106,14 @@ export default function Footer() {
                 <h2 className="text-2xl font-semibold mb-4">Treatments</h2>
                 <ul className="grid grid-cols-2 gap-x-6 text-sm">
                   <div className="space-y-2">
-                    <li><Link href="/our-team/dr-rajesh-jain" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>Surgical Oncology</Link></li>
-                    <li><Link href="/our-team/dr-ishan-mohan" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>Head & Neck Oncosurgery</Link></li>
-                    <li><Link href="/our-team/dr-himanshu-gupta" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>Plastic & Onco Reconstructive Surgery</Link></li>
+                    <li><Link href="/our-team/dr-rajesh-jain" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Surgical Oncology</Link></li>
+                    <li><Link href="/our-team/dr-ishan-mohan" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Head & Neck Oncosurgery</Link></li>
+                    <li><Link href="/our-team/dr-himanshu-gupta" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Plastic & Onco Reconstructive Surgery</Link></li>
                   </div>
 
                   <div className="space-y-2">
-                    <li><Link href="/our-team/dr-pranjal-kulshreshtha" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>Breast Oncological Surgery</Link></li>
-                    <li><Link href="/treatments/gynaecological" className="flex items-start gap-2 hover:text-sky-400"><span>›</span>Gynaecological Surgical Oncology</Link></li>
+                    <li><Link href="/our-team/dr-pranjal-kulshreshtha" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Breast Oncological Surgery</Link></li>
+                    <li><Link href="/treatments/gynaecological" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Gynaecological Surgical Oncology</Link></li>
                   </div>
                 </ul>
               </div>
@@ -123,22 +123,22 @@ export default function Footer() {
                 <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-center gap-3">
-                    <FaPhone className="text-sky-400" />
-                    <Link href="tel:+919810465644" className="hover:text-sky-400">
+                    <FaPhone className="text-[#14adac]" />
+                    <Link href="tel:+919810465644" className="hover:text-[#14adac]">
                       +91 98104 65644
                     </Link>
                   </li>
 
                   <li className="flex items-center gap-3">
-                    <FaEnvelope className="text-sky-400" />
-                    <Link href="mailto:drrajeshjainonococare@gmail.com" className="hover:text-sky-400">
+                    <FaEnvelope className="text-[#14adac]" />
+                    <Link href="mailto:drrajeshjainonococare@gmail.com" className="hover:text-[#14adac]">
                       drrajeshjainonococare@gmail.com
                     </Link>
                   </li>
 
                   <li className="flex items-start gap-3">
-                    <FaLocationDot className="text-sky-400 text-lg mt-1" />
-                    <Link href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7" target="_blank" className="hover:text-sky-400">
+                    <FaLocationDot className="text-[#14adac] text-lg mt-1" />
+                    <Link href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7" target="_blank" className="hover:text-[#14adac]">
                       <p className="">
                         Pusa Rd, Radha Soami Satsang,
 
@@ -157,9 +157,9 @@ export default function Footer() {
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-sky-500 mt-10 py-4 text-center text-sm">
+      <div className="bg-[#14adac] mt-10 py-4 text-center text-sm">
         <p>
-          <Link href="https://tekbooster.com/" target="_blank">
+          <Link href="https://tekbooster.com/" className="hover:text-gray-200" target="_blank">
             Design & Developed By Tek Booster <br className="block sm:hidden" />
             (Digital Marketing Company)
           </Link>

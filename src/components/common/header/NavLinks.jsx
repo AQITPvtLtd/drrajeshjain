@@ -39,7 +39,7 @@ const NavLinks = () => {
         <ul className="hidden lg:flex flex-wrap items-center gap-x-5 xl:gap-x-8 relative">
           {navItems.map((item, index) => (
             <li key={index} className="relative group">
-              <div className="flex items-center space-x-1 hover:text-sky-400 transition duration-200 cursor-pointer">
+              <div className="flex items-center space-x-1 hover:text-[#14adac] transition duration-200 cursor-pointer">
                 <Link href={item.href}>{item.name}</Link>
                 {item.dropdown && <IoIosArrowDown className="text-xs" />}
               </div>
@@ -66,7 +66,7 @@ const NavLinks = () => {
         <div className="hidden lg:flex shrink-0 ml-auto">
           <Link
             href={`tel:${callData.phone}`}
-            className="bg-[#00D7FF] hover:bg-[#00bfe6] text-white flex items-center space-x-2 px-6 py-2 rounded-md shadow transition duration-200"
+            className="bg-[#14adac] hover:bg-[#0F8A89] text-white flex items-center space-x-2 px-6 py-2 rounded-md shadow transition duration-200"
           >
             <FaPhoneAlt />
             <span className="text-sm lg:text-base">
@@ -100,7 +100,7 @@ const NavLinks = () => {
                     onClick={() =>
                       setOpenDropdown(openDropdown === index ? null : index)
                     }
-                    className="flex items-center justify-between w-full text-left py-1 hover:text-sky-400"
+                    className="flex items-center justify-between w-full text-left py-1 hover:text-[#14adac]"
                   >
                     <span>{item.name}</span>
                     <IoIosArrowDown
@@ -117,7 +117,7 @@ const NavLinks = () => {
                           <Link
                             href={sub.href}
                             onClick={() => setIsOpen(false)}
-                            className="block py-1 hover:text-sky-400"
+                            className="block py-1 hover:text-[#14adac]"
                           >
                             {sub.name}
                           </Link>
@@ -130,7 +130,7 @@ const NavLinks = () => {
                 <Link
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="block hover:text-sky-400 py-1"
+                  className="block hover:text-[#14adac] py-1"
                 >
                   {item.name}
                 </Link>
@@ -142,7 +142,7 @@ const NavLinks = () => {
           <li className="pt-2">
             <Link
               href={`tel:${callData.phone}`}
-              className="bg-[#00D7FF] hover:bg-[#00bfe6] text-white flex items-center justify-center space-x-2 px-4 py-3 rounded-md shadow transition duration-200"
+              className="bg-[#14adac] hover:bg-[#0F8A89] text-white flex items-center justify-center space-x-2 px-4 py-3 rounded-md shadow transition duration-200"
             >
               <FaPhoneAlt />
               <span>

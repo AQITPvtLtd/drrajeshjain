@@ -53,11 +53,11 @@ export default function Testimonials() {
       <div className="container mx-auto px-6 md:px-12 relative">
 
         {/* Navigation Buttons */}
-        <button className="swiper-button-prev bg-[#1e3b70] text-white p-3 rounded-full shadow-md hover:bg-[#0b2c5f] transition absolute -left-2 md:-left-8 top-1/2 -translate-y-1/2 z-20">
+        <button className="swiper-button-prev bg-[#14adac] text-white p-3 rounded-full shadow-md hover:bg-[#0F8A89] transition absolute -left-2 md:-left-8 top-1/2 -translate-y-1/2 z-20">
           <FaChevronLeft className="text-white" size={16} />
         </button>
 
-        <button className="swiper-button-next bg-[#1e3b70] text-white p-3 rounded-full shadow-md hover:bg-[#0b2c5f] transition absolute -right-2 md:-right-8 top-1/2 -translate-y-1/2 z-20">
+        <button className="swiper-button-next bg-[#14adac] text-white p-3 rounded-full shadow-md hover:bg-[#0F8A89] transition absolute -right-2 md:-right-8 top-1/2 -translate-y-1/2 z-20">
           <FaChevronRight className="text-white" size={16} />
         </button>
 

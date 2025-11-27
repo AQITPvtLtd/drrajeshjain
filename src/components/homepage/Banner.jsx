@@ -32,7 +32,7 @@ export default function Banner() {
 
           <Link
             href="/contact-us"
-            className="bg-sky-500 text-white font-semibold py-4 px-12 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg inline-block text-center"
+            className="bg-[#14adac] text-white font-semibold py-4 px-12 rounded-full hover:bg-[#0F8A89] hover:shadow-xl hover:scale-105 transition-all duration-300 shadow-lg inline-block text-center"
           >
             Book Your Consultation
           </Link>
@@ -64,7 +64,7 @@ export default function Banner() {
           </p>
 
           <Link href="/contact-us">
-            <button className="bg-sky-500 text-white font-semibold py-3 px-8 rounded-full hover:bg-sky-600 hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base shadow-lg">
+            <button className="bg-[#14adac] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#0F8A89] hover:shadow-xl hover:scale-105 transition-all duration-300 text-sm sm:text-base shadow-lg">
               Book Your Consultation
             </button>
           </Link>

@@ -156,7 +156,7 @@ export default function Appointment() {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="w-full bg-[#00b4d8] hover:bg-[#009ec2] cursor-pointer text-white font-semibold py-3 rounded-full transition-all duration-300 flex justify-center items-center"
+                        className="w-full bg-[#14adac] hover:bg-[#0F8A89] cursor-pointer text-white font-semibold py-3 rounded-full transition-all duration-300 flex justify-center items-center"
                     >
                         {loading ? (
                             <ClipLoader color="#fff" size={20} />

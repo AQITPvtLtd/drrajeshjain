@@ -59,7 +59,8 @@ export default function Banner() {
           </h1>
 
           <p className="text-black font-semibold text-base tracking-wide mb-5">
-            From diagnosis to treatment, we provide clear guidance, emotional support, and world-class expertise.
+            From diagnosis to treatment,
+            we offer clear guidance and caring support.
           </p>
 
           <Link href="/contact-us">

@@ -3,10 +3,10 @@ import React from "react";
 
 export default function MissionVision() {
   return (
-    <section className="relative w-full py-20 bg-gradient-to-b from-white to-gray-50 text-gray-800">
+    <section className="relative w-full py-5 md:py-10 bg-gradient-to-b from-white to-gray-50 text-gray-800">
       <div className="max-w-6xl mx-auto px-6 lg:px-12">
         {/* ===== Heading ===== */}
-        <div className="text-center mb-16">
+        <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900" style={{ fontFamily: "Roboto Slab, serif" }}>
             Our <span className="text-blue-600">Mission</span> &{" "}
             <span className="text-blue-600">Vision</span>

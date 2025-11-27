@@ -5,17 +5,21 @@ import Swal from 'sweetalert2';
 import { ClipLoader } from "react-spinners";
 import { FaUser, FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { IoIosArrowDown } from "react-icons/io";
+import { MdMedicalInformation } from "react-icons/md";
 import { form } from '@/services/user';
 
 export default function Form() {
     const router = useRouter();
     const [loading, setLoading] = useState(false);
+
     const [formData, setFormData] = useState({
         fullname: "",
         email: "",
         phone: "",
         location: "",
         doctor: "",
+        message: "",
+        MedicalReport: null,
     });
 
     const handleChange = (e) => {
@@ -23,31 +27,57 @@ export default function Form() {
         setFormData({ ...formData, [name]: value });
     };
 
+    const handleFileChange = (e) => {
+        const file = e.target.files[0];
+
+        if (file && file.size > 10 * 1024 * 1024) {
+            Swal.fire({
+                icon: "warning",
+                title: "File Too Large",
+                text: "Please upload a file smaller than 10MB.",
+            });
+            e.target.value = "";
+            return;
+        }
+
+        setFormData({ ...formData, MedicalReport: file });
+    };
+
     const handleSubmit = async (e) => {
         e.preventDefault();
         setLoading(true);
 
         const formDataToSend = new FormData();
-        Object.keys(formData).forEach((key) => {
-            formDataToSend.append(key, formData[key]);
-        });
+        formDataToSend.append("fullname", formData.fullname);
+        formDataToSend.append("email", formData.email);
+        formDataToSend.append("phone", formData.phone);
+        formDataToSend.append("location", formData.location);
+        formDataToSend.append("doctor", formData.doctor);
+        formDataToSend.append("message", formData.message);
+
+        if (formData.MedicalReport) {
+            formDataToSend.append("MedicalReport", formData.MedicalReport);
+        }
 
         try {
             const response = await form(formDataToSend);
+
             if (response.success) {
                 Swal.fire({
                     title: "Form Submitted Successfully!",
                     text: "We have received your information.",
                     icon: "success",
                 });
+
                 setFormData({
                     fullname: "",
                     email: "",
                     phone: "",
                     location: "",
                     doctor: "",
+                    message: "",
+                    MedicalReport: null,
                 });
-                router.push("/");
             } else {
                 Swal.fire({
                     icon: "error",
@@ -68,7 +98,8 @@ export default function Form() {
 
     return (
         <section className="py-16 px-6">
-            <div className="max-w-3xl bg-[#1e3b70]  mx-auto backdrop-blur-xl rounded-2xl shadow-2xl p-8 md:p-12 border border-white/20">
+            <div className="max-w-3xl bg-[#1e3b70] mx-auto backdrop-blur-xl rounded-2xl shadow-2xl p-6 md:p-7 border border-white/20">
+
                 <h2 className="text-center text-white text-3xl font-bold mb-8" style={{ fontFamily: "Roboto Slab, serif" }}>
                     Book an Appointment
                 </h2>
@@ -88,20 +119,39 @@ export default function Form() {
                                 name={input.name}
                                 value={formData[input.name]}
                                 onChange={handleChange}
-                                className="w-full bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-4 focus:ring-4 focus:ring-cyan-400 focus:bg-white transition-all outline-none placeholder-transparent peer"
-                                placeholder={input.placeholder}
-                                required
+                                placeholder=" "   // <-- Important (single space)
+                                className="w-full bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-4 
+    focus:ring-4 focus:ring-cyan-400 focus:bg-white transition-all outline-none 
+    peer"
                             />
                             <label
-                                className="absolute left-12 top-1/2 transform -translate-y-1/2 text-gray-500 text-sm transition-all peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-base peer-focus:top-2 peer-focus:text-xs peer-focus:text-cyan-600"
+                                className="absolute left-12 top-1/2 -translate-y-1/2 text-gray-500 text-sm transition-all
+    peer-focus:top-2 peer-focus:text-xs peer-focus:text-cyan-600
+    peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm 
+    peer-placeholder-shown:-translate-y-1/2
+    peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs"
                             >
                                 {input.placeholder}
                             </label>
+
                             <div className="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-500 text-lg">
                                 {input.icon}
                             </div>
                         </div>
                     ))}
+
+                    {/* Medical Report Upload */}
+                    <div className="relative group bg-white/90 rounded-xl p-3 border">
+                        <div className="flex items-center gap-3">
+                            <MdMedicalInformation className="text-cyan-500 text-xl" />
+                            <input
+                                type="file"
+                                accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.xls,.xlsx,.txt,.avif"
+                                onChange={handleFileChange}
+                                className="w-full text-sm text-gray-700"
+                            />
+                        </div>
+                    </div>
 
                     {/* Doctor Dropdown */}
                     <div className="relative group">
@@ -109,7 +159,8 @@ export default function Form() {
                             name="doctor"
                             value={formData.doctor}
                             onChange={handleChange}
-                            className="w-full appearance-none bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-10 focus:ring-4 focus:ring-cyan-400 focus:bg-white transition-all outline-none"
+                            className="w-full appearance-none bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-10 
+                            focus:ring-4 focus:ring-cyan-400 focus:bg-white transition-all outline-none"
                             required
                         >
                             <option value="">Choose Doctor</option>
@@ -120,9 +171,39 @@ export default function Form() {
                             <option value="Dr. Shruti Bhatia">Dr. Shruti Bhatia</option>
                             <option value="Dr. Shubhi Yadav">Dr. Shubhi Yadav</option>
                         </select>
-                        <IoIosArrowDown className="absolute right-4 top-1/2 -translate-y-1/2 text-cyan-500 text-xl pointer-events-none" />
+
+                        <IoIosArrowDown className="absolute right-4 top-1/2 -translate-y-1/2 text-cyan-500 text-xl" />
+
                         <div className="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-500 text-lg">
                             <FaUser />
+                        </div>
+                    </div>
+
+                    {/* MESSAGE TEXTAREA */}
+                    <div className="relative group">
+                        <textarea
+                            name="message"
+                            value={formData.message}
+                            onChange={handleChange}
+                            placeholder=" "
+                            rows={1}
+                            className="w-full bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-4 
+        focus:ring-4 focus:ring-cyan-400 focus:bg-white transition-all outline-none 
+        peer resize-none"
+                        ></textarea>
+
+                        <label
+                            className="absolute left-12 top-4 text-gray-500 text-sm transition-all
+        peer-focus:top-1 peer-focus:text-xs peer-focus:text-cyan-600
+        peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2
+        peer-placeholder-shown:text-sm
+        peer-not-placeholder-shown:top-1 peer-not-placeholder-shown:text-xs"
+                        >
+                            Your Message
+                        </label>
+
+                        <div className="absolute left-4 top-4 text-cyan-500 text-lg">
+                            <FaEnvelope />
                         </div>
                     </div>
 
@@ -130,10 +211,13 @@ export default function Form() {
                     <button
                         type="submit"
                         disabled={loading}
-                        className="mt-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-semibold py-3 rounded-xl shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 flex justify-center items-center gap-2 hover:scale-105 active:scale-95"
+                        className="mt-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-semibold py-3 rounded-xl 
+                        shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 flex justify-center items-center gap-2 
+                        hover:scale-105 active:scale-95"
                     >
                         {loading ? <ClipLoader color="#fff" size={20} /> : "Make Appointment"}
                     </button>
+
                 </form>
             </div>
         </section>

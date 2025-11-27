@@ -17,7 +17,7 @@ export default function Faq() {
   const toggleFaq = (id) => setActiveIndex(activeIndex === id ? null : id);
 
   return (
-    <section className="py-16 bg-white px-5 md:px-10">
+    <section className="py-10 bg-white px-5 md:px-10">
       <div className="container mx-auto px-4 relative">
         <div className="lg:pr-[520px]">
           <div className="flex flex-col-reverse lg:flex-row items-center lg:items-start gap-10">
@@ -35,10 +35,15 @@ export default function Faq() {
                   <div key={faq.id} className="bg-white shadow-md rounded-xl border border-gray-100 transition-all duration-300">
                     <button
                       onClick={() => toggleFaq(faq.id)}
-                      className="w-full flex justify-between items-center text-left px-6 py-4 font-semibold text-[#1e3b70] focus:outline-none"
+                      className="w-full flex justify-between items-center text-left px-6 py-4 font-semibold text-[#1e3b70] focus:outline-none gap-3 md:gap-0"
                     >
+
                       {faq.question}
-                      <span className={`w-8 h-8 flex items-center justify-center rounded-md transition-all ${activeIndex === faq.id ? "bg-[#00b4d8] text-white" : "bg-[#1e3b70] text-white"}`}>
+                      <span
+                        className={`w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-md flex-shrink-0 transition-all ${activeIndex === faq.id ? "bg-[#00b4d8] text-white" : "bg-[#1e3b70] text-white"
+                          }`}
+                      >
+
                         {activeIndex === faq.id ? <FaMinus /> : <FaPlus />}
                       </span>
                     </button>

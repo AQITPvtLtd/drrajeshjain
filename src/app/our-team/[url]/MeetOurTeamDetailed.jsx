@@ -56,7 +56,7 @@ const MeetOurTeamDetailed = ({ url }) => {
             <div className="bg-white rounded-2xl shadow-md p-8 border border-gray-100">
               {/* Image + Title Row */}
               <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start mb-8">
-                <div className="relative w-48 h-48 rounded-2xl overflow-hidden shadow">
+                <div className="relative w-full max-w-xs h-64 rounded-2xl overflow-hidden shadow mx-auto md:w-48 md:h-48">
                   <Image
                     src={
                       teamdetaild.image?.startsWith("http")
@@ -65,31 +65,32 @@ const MeetOurTeamDetailed = ({ url }) => {
                     }
                     alt={teamdetaild.title || "Team Member"}
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-top"
                     priority
                   />
                 </div>
+
                 <div className="space-y-3">
-  {/* Name */}
-  <h1 className="text-3xl sm:text-4xl font-bold text-[#1e3b70] leading-tight">
-    {teamdetaild.title}
-  </h1>
+                  {/* Name */}
+                  <h1 className="text-3xl md:text-4xl font-bold text-[#1e3b70] leading-tight" style={{ fontFamily: "Roboto Slab, serif" }}>
+                    {teamdetaild.title}
+                  </h1>
 
-  {/* Role */}
-  {teamdetaild.role && (
-    <p className="text-xl sm:text-2xl text-[#345a9d] font-semibold tracking-wide">
-      {teamdetaild.role}
-    </p>
-  )}
+                  {/* Role */}
+                  {teamdetaild.role && (
+                    <p className="text-xl md:text-3xl text-[#345a9d] font-semibold tracking-wide">
+                      {teamdetaild.role}
+                    </p>
+                  )}
 
-  {/* Address */}
-  {teamdetaild.address && (
-    <div className="flex items-center gap-2 text-gray-700 text-lg mt-1">
-      <FaLocationDot className="text-[#1e3b70] text-xl" />
-      <span className="leading-relaxed">{teamdetaild.address}</span>
-    </div>
-  )}
-</div>
+                  {/* Address */}
+                  {teamdetaild.address && (
+                    <div className="flex items-center gap-2 text-gray-700 text-lg mt-1">
+                      <FaLocationDot className="text-[#1e3b70] text-xl" />
+                      <span className="leading-relaxed">{teamdetaild.address}</span>
+                    </div>
+                  )}
+                </div>
 
               </div>
 
@@ -112,11 +113,10 @@ const MeetOurTeamDetailed = ({ url }) => {
                   <li key={td.id}>
                     <Link
                       href={`${td.url}`}
-                      className={`block px-5 py-3 transition ${
-                        td.url === url
+                      className={`block px-5 py-3 transition ${td.url === url
                           ? "bg-[#00bfe6] text-white"
                           : "hover:bg-[#f0f9ff] text-gray-700"
-                      }`}
+                        }`}
                     >
                       {td.title}
                     </Link>

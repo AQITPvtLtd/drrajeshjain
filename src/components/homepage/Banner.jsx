@@ -21,12 +21,13 @@ export default function Banner() {
         {/* Overlay content (desktop only) */}
         <div className="absolute inset-0 flex flex-col justify-center items-start px-12 text-left">
 
-          <h1 className="lg:text-4xl md:text-3xl text-2xl font-bold text-[#24356E] leading-tight mb-6" style={{ fontFamily: "Roboto Slab, serif" }}>
+          <h1 className="lg:text-3xl md:text-2xl text-2xl font-bold text-[#24356E] leading-tight mb-6" style={{ fontFamily: "Roboto Slab, serif" }}>
             Expert Care You Can Trust
           </h1>
 
-          <p className="text-black font-semibold text-base tracking-wide pb-5">
-            From diagnosis to treatment, we provide clear guidance, <br /> emotional support, and world-class expertise.
+          <p className="text-black font-semibold text-sm pb-5 text-justify">
+            From diagnosis to treatment, <br />
+            we offer clear guidance and caring support.
           </p>
 
           <Link

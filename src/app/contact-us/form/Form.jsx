@@ -140,19 +140,6 @@ export default function Form() {
                         </div>
                     ))}
 
-                    {/* Medical Report Upload */}
-                    <div className="relative group bg-white/90 rounded-xl p-3 border">
-                        <div className="flex items-center gap-3">
-                            <MdMedicalInformation className="text-cyan-500 text-xl" />
-                            <input
-                                type="file"
-                                accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.xls,.xlsx,.txt,.avif"
-                                onChange={handleFileChange}
-                                className="w-full text-sm text-gray-700"
-                            />
-                        </div>
-                    </div>
-
                     {/* Doctor Dropdown */}
                     <div className="relative group">
                         <select
@@ -197,12 +184,27 @@ export default function Form() {
                         </div>
                     </div>
 
+                    <p className='text-white text-sm text-center'>Upload Medical Report (Optional)</p>
+
+                    {/* Medical Report Upload */}
+                    <div className="relative group bg-white/90 rounded-xl p-3 border">
+                        <div className="flex items-center gap-3">
+                            <MdMedicalInformation className="text-cyan-500 text-xl" />
+                            <input
+                                type="file"
+                                accept=".pdf,.jpg,.jpeg,.png,.doc,.docx,.xls,.xlsx,.txt,.avif"
+                                onChange={handleFileChange}
+                                className="w-full text-sm text-gray-700"
+                            />
+                        </div>
+                    </div>
+
 
                     {/* Submit Button */}
                     <button
                         type="submit"
                         disabled={loading}
-                        className="mt-0 md:mt-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-semibold py-3 rounded-xl 
+                        className="bg-gradient-to-r cursor-pointer from-cyan-400 to-blue-500 text-white font-semibold py-3 rounded-xl 
                         shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 flex justify-center items-center gap-2 
                         hover:scale-105 active:scale-95"
                     >

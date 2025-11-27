@@ -97,8 +97,8 @@ export default function Form() {
     };
 
     return (
-        <section className="py-16 px-6">
-            <div className="max-w-3xl bg-[#1e3b70] mx-auto backdrop-blur-xl rounded-2xl shadow-2xl p-6 md:p-7 border border-white/20">
+        <section className="py-16 px-0 md:px-6">
+            <div className="max-w-3xl bg-[#1e3b70] mx-auto backdrop-blur-xl rounded-2xl shadow-2xl p-3 md:p-7 border border-white/20">
 
                 <h2 className="text-center text-white text-3xl font-bold mb-8" style={{ fontFamily: "Roboto Slab, serif" }}>
                     Book an Appointment
@@ -185,33 +185,24 @@ export default function Form() {
                             name="message"
                             value={formData.message}
                             onChange={handleChange}
-                            placeholder=" "
+                            placeholder="Your Message"
                             rows={1}
                             className="w-full bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-4 
         focus:ring-4 focus:ring-cyan-400 focus:bg-white transition-all outline-none 
         peer resize-none"
                         ></textarea>
 
-                        <label
-                            className="absolute left-12 top-4 text-gray-500 text-sm transition-all
-        peer-focus:top-1 peer-focus:text-xs peer-focus:text-cyan-600
-        peer-placeholder-shown:top-1/2 peer-placeholder-shown:-translate-y-1/2
-        peer-placeholder-shown:text-sm
-        peer-not-placeholder-shown:top-1 peer-not-placeholder-shown:text-xs"
-                        >
-                            Your Message
-                        </label>
-
                         <div className="absolute left-4 top-4 text-cyan-500 text-lg">
                             <FaEnvelope />
                         </div>
                     </div>
 
+
                     {/* Submit Button */}
                     <button
                         type="submit"
                         disabled={loading}
-                        className="mt-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-semibold py-3 rounded-xl 
+                        className="mt-0 md:mt-4 bg-gradient-to-r from-cyan-400 to-blue-500 text-white font-semibold py-3 rounded-xl 
                         shadow-lg hover:shadow-cyan-400/50 transition-all duration-300 flex justify-center items-center gap-2 
                         hover:scale-105 active:scale-95"
                     >

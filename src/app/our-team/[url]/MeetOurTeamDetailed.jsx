@@ -96,7 +96,7 @@ const MeetOurTeamDetailed = ({ url }) => {
 
               {/* Content */}
               <div
-                className="prose max-w-none text-gray-700 leading-relaxed"
+                className="prose max-w-none text-gray-700 leading-relaxed text-justify"
                 dangerouslySetInnerHTML={{ __html: teamdetaild.content }}
               />
             </div>

@@ -8,18 +8,18 @@ export default function MissionVision() {
         {/* ===== Heading ===== */}
         <div className="text-center mb-10">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900" style={{ fontFamily: "Roboto Slab, serif" }}>
-            Our <span className="text-blue-600">Mission</span> &{" "}
-            <span className="text-blue-600">Vision</span>
+            Our <span className="text-[#24356E]">Mission</span> &{" "}
+            <span className="text-[#24356E]">Vision</span>
           </h2>
         </div>
 
         {/* ===== Mission & Vision Cards ===== */}
         <div className="grid md:grid-cols-2 gap-10">
           {/* ===== Mission Card ===== */}
-          <div className="relative bg-white rounded-2xl border border-gray-100 shadow-md hover:shadow-lg transition-all duration-300 p-10">
+          <div className="relative bg-gradient-to-b from-white to-blue-50 rounded-2xl border border-gray-100 shadow-md hover:shadow-lg transition-all duration-300 p-10">
             {/* Curved Top Border */}
             <div className="absolute -top-[2px] left-0 w-full h-[10px] overflow-hidden rounded-t-2xl">
-              <div className="w-[98%] mx-auto h-[6px] bg-gradient-to-r from-blue-600 to-blue-400 rounded-b-full"></div>
+              <div className="w-[98%] mx-auto h-[6px] bg-[#14adac] rounded-b-full"></div>
             </div>
 
             <h3 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: "Roboto Slab, serif" }}>
@@ -34,7 +34,7 @@ export default function MissionVision() {
           <div className="relative bg-gradient-to-b from-white to-blue-50 rounded-2xl border border-gray-100 shadow-md hover:shadow-lg transition-all duration-300 p-10">
             {/* Curved Top Border */}
             <div className="absolute -top-[2px] left-0 w-full h-[10px] overflow-hidden rounded-t-2xl">
-              <div className="w-[98%] mx-auto h-[6px] bg-gradient-to-r from-blue-600 to-blue-400 rounded-b-full"></div>
+              <div className="w-[98%] mx-auto h-[6px] bg-[#14adac] rounded-b-full"></div>
             </div>
 
             <h3 className="text-2xl font-bold text-gray-900 mb-4" style={{ fontFamily: "Roboto Slab, serif" }}>

@@ -99,8 +99,8 @@ const Contact = () => {
       </div>
 
       {/* Map Section */}
-      <div ref={sectionRef} className="mt-5 relative">
-        <h3 className="absolute top-6 sm:top-8 left-1/2 -translate-x-1/2 bg-white px-4 sm:px-6 py-1.5 sm:py-2 text-gray-800 text-sm sm:text-lg font-semibold rounded-full shadow-md z-10">
+      <div ref={sectionRef} className="relative">
+        <h3 className="absolute sm:top-8 left-1/2 -translate-x-1/2 bg-white px-4 sm:px-6 py-1.5 sm:py-2 text-gray-800 text-sm sm:text-lg font-semibold rounded-full shadow-md z-10">
           Find Us on the Map
         </h3>
         <div className="w-full h-[300px] sm:h-[400px] lg:h-[450px] rounded-none lg:rounded-t-3xl overflow-hidden">

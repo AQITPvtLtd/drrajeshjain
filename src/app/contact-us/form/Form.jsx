@@ -106,39 +106,82 @@ export default function Form() {
 
                 <form onSubmit={handleSubmit} className="flex flex-col gap-6">
 
-                    {/* Input Group */}
-                    {[
-                        { name: "fullname", placeholder: "Your Name", icon: <FaUser /> },
-                        { name: "email", placeholder: "Email Address", icon: <FaEnvelope />, type: "email" },
-                        { name: "phone", placeholder: "Phone Number", icon: <FaPhoneAlt />, type: "tel" },
-                        { name: "location", placeholder: "Your Location", icon: <FaMapMarkerAlt /> },
-                    ].map((input, i) => (
-                        <div key={i} className="relative group">
+                    {/* NAME + EMAIL */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        {/* NAME */}
+                        <div className="relative group">
                             <input
-                                type={input.type || "text"}
-                                name={input.name}
-                                value={formData[input.name]}
+                                type="text"
+                                name="fullname"
+                                value={formData.fullname}
                                 onChange={handleChange}
-                                placeholder=" "   // <-- Important (single space)
+                                placeholder="Your Name"
                                 className="w-full bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-4 
-    focus:ring-4 focus:ring-[#14adac] focus:bg-white transition-all outline-none 
-    peer"
+                focus:ring-4 focus:ring-[#14adac] focus:bg-white transition-all outline-none peer"
                             />
-                            <label
-                                className="absolute left-12 top-1/2 -translate-y-1/2 text-gray-500 text-sm transition-all
-    peer-focus:top-2 peer-focus:text-xs peer-focus:text-cyan-600
-    peer-placeholder-shown:top-1/2 peer-placeholder-shown:text-sm 
-    peer-placeholder-shown:-translate-y-1/2
-    peer-not-placeholder-shown:top-2 peer-not-placeholder-shown:text-xs"
-                            >
-                                {input.placeholder}
-                            </label>
-
+                        
                             <div className="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-500 text-lg">
-                                {input.icon}
+                                <FaUser />
                             </div>
                         </div>
-                    ))}
+
+                        {/* EMAIL */}
+                        <div className="relative group">
+                            <input
+                                type="email"
+                                name="email"
+                                value={formData.email}
+                                onChange={handleChange}
+                                placeholder="Email Address"
+                                className="w-full bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-4 
+                focus:ring-4 focus:ring-[#14adac] focus:bg-white transition-all outline-none peer"
+                            />
+                           
+                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-500 text-lg">
+                                <FaEnvelope />
+                            </div>
+                        </div>
+                    </div>
+
+
+                    {/* PHONE + LOCATION */}
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+                        {/* PHONE */}
+                        <div className="relative group">
+                            <input
+                                type="tel"
+                                name="phone"
+                                value={formData.phone}
+                                onChange={handleChange}
+                                placeholder="Your Phone Number"
+                                className="w-full bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-4 
+                focus:ring-4 focus:ring-[#14adac] focus:bg-white transition-all outline-none peer"
+                            />
+                           
+                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-500 text-lg">
+                                <FaPhoneAlt />
+                            </div>
+                        </div>
+
+                        {/* LOCATION */}
+                        <div className="relative group">
+                            <input
+                                type="text"
+                                name="location"
+                                value={formData.location}
+                                onChange={handleChange}
+                                placeholder="Your Location"
+                                className="w-full bg-white/90 text-gray-800 rounded-xl py-4 pl-12 pr-4 
+                focus:ring-4 focus:ring-[#14adac] focus:bg-white transition-all outline-none peer"
+                            />
+                         
+                            <div className="absolute left-4 top-1/2 -translate-y-1/2 text-cyan-500 text-lg">
+                                <FaMapMarkerAlt />
+                            </div>
+                        </div>
+                    </div>
+
 
                     {/* Doctor Dropdown */}
                     <div className="relative group">
@@ -184,7 +227,7 @@ export default function Form() {
                         </div>
                     </div>
 
-                    <p className='text-white text-sm text-center'>Upload Medical Report (Optional)</p>
+                    <p className='text-white text-sm text-start'>Upload Medical Report (Optional)</p>
 
                     {/* Medical Report Upload */}
                     <div className="relative group bg-white/90 rounded-xl p-3 border">

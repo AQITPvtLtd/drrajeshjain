@@ -65,7 +65,7 @@ export default function MeetOurTeam() {
 
                             {td.url && (
                                 <Link href={`/our-team/${td.url}`}>
-                                    <button className="w-10 cursor-pointer h-10 flex items-center justify-center rounded-full bg-[#1e3b70] text-white hover:bg-[#274b90] transition">
+                                    <button className="w-10 cursor-pointer h-10 flex items-center justify-center rounded-full bg-[#14adac] text-white hover:bg-[#0F8A89] transition">
                                         <FaArrowRight size={16} />
                                     </button>
                                 </Link>

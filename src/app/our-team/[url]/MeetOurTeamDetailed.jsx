@@ -96,7 +96,7 @@ const MeetOurTeamDetailed = ({ url }) => {
 
               {/* Content */}
               <div
-                className="prose max-w-none text-gray-700 leading-relaxed text-justify"
+                className="prose max-w-none text-gray-700 leading-relaxed lg:text-justify text-sm list-outside"
                 dangerouslySetInnerHTML={{ __html: teamdetaild.content }}
               />
             </div>
@@ -114,8 +114,8 @@ const MeetOurTeamDetailed = ({ url }) => {
                     <Link
                       href={`${td.url}`}
                       className={`block px-5 py-3 transition ${td.url === url
-                          ? "bg-[#00bfe6] text-white"
-                          : "hover:bg-[#f0f9ff] text-gray-700"
+                        ? "bg-[#00bfe6] text-white"
+                        : "hover:bg-[#f0f9ff] text-gray-700"
                         }`}
                     >
                       {td.title}

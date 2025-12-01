@@ -13,7 +13,7 @@ export default function About() {
             Principal Director - Surgical Oncology
           </p>
 
-          <h1 className="text-4xl md:text-5xl font-bold text-[#24356E] leading-tight">
+          <h1 className="text-4xl md:text-5xl font-bold text-[#24356E] leading-tight" style={{ fontFamily: "Roboto Slab, serif" }}>
             Dr. Rajesh Kumar Jain
           </h1>
 

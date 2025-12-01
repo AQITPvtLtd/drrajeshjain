@@ -40,7 +40,7 @@ export default function Faq() {
 
                       {faq.question}
                       <span
-                        className={`w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-md flex-shrink-0 transition-all ${activeIndex === faq.id ? "bg-[#00b4d8] text-white" : "bg-[#1e3b70] text-white"
+                        className={`w-6 h-6 md:w-8 md:h-8 flex items-center justify-center rounded-md flex-shrink-0 transition-all ${activeIndex === faq.id ? "bg-[#14adac] text-white" : "bg-[#1e3b70] text-white"
                           }`}
                       >
 

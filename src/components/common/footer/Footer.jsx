@@ -84,7 +84,7 @@ export default function Footer() {
 
               {/* Quick Links */}
               <div>
-                <h2 className="text-2xl font-semibold mb-4">Quick Links</h2>
+                <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: "Roboto Slab, serif" }}>Quick Links</h2>
                 <ul className="grid grid-cols-2 gap-x-6 text-sm">
                   <div className="space-y-2">
                     <li><Link href="/" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Home</Link></li>
@@ -103,7 +103,7 @@ export default function Footer() {
 
               {/* Treatments */}
               <div>
-                <h2 className="text-2xl font-semibold mb-4">Treatments</h2>
+                <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: "Roboto Slab, serif" }}>Treatments</h2>
                 <ul className="grid grid-cols-2 gap-x-6 text-sm">
                   <div className="space-y-2">
                     <li><Link href="/our-team/dr-rajesh-jain" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Surgical Oncology</Link></li>
@@ -120,7 +120,7 @@ export default function Footer() {
 
               {/* Contact Info */}
               <div>
-                <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+                <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: "Roboto Slab, serif" }}>Contact Us</h2>
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-center gap-3">
                     <FaPhone className="text-[#14adac]" />
@@ -158,7 +158,7 @@ export default function Footer() {
 
       {/* Bottom Bar */}
       <div className="bg-[#14adac] mt-10 py-4 text-center text-sm">
-        <p>
+        <p style={{ fontFamily: "Roboto Slab, serif" }}>
           <Link href="https://tekbooster.com/" className="hover:text-gray-200" target="_blank">
             Design & Developed By Tek Booster <br className="block sm:hidden" />
             (Digital Marketing Company)

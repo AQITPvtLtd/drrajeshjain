@@ -13,27 +13,6 @@ import { FaFemale } from "react-icons/fa";
 
 const services = [
   {
-    icon: <FaRibbon className="text-white text-3xl" />,
-    title: "Breast Cancer Surgery",
-    description:
-      "",
-    href: "/our-team/dr-pranjal-kulshreshtha",
-  },
-  {
-    icon: <MdMedicalServices className="text-white text-3xl" />,
-    title: "Head & Neck Cancer Surgery",
-    description:
-      "",
-    href: "/our-team/dr-ishan-mohan",
-  },
-  {
-    icon: <FaFemale className="text-white text-3xl" />,
-    title: "Gynaecological Cancer Surgery",
-    description:
-      "",
-    href: "/treatments/gynaecological",
-  },
-  {
     icon: <GiStomach  className="text-white text-3xl" />,
     title: "Gastrointestinal Cancer Surgery",
     description:
@@ -60,6 +39,27 @@ const services = [
     description:
       "",
     href: "/our-team/dr-rajesh-jain",
+  },
+  {
+    icon: <MdMedicalServices className="text-white text-3xl" />,
+    title: "Head & Neck Cancer Surgery",
+    description:
+      "",
+    href: "/our-team/dr-ishan-mohan",
+  },
+  {
+    icon: <FaRibbon className="text-white text-3xl" />,
+    title: "Breast Cancer Surgery",
+    description:
+      "",
+    href: "/our-team/dr-pranjal-kulshreshtha",
+  },
+  {
+    icon: <FaFemale className="text-white text-3xl" />,
+    title: "Gynaecological Cancer Surgery",
+    description:
+      "",
+    href: "/treatments/gynaecological",
   },
   {
     icon: <FaBandAid className="text-white text-3xl" />,

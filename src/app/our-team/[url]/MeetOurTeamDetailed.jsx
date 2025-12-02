@@ -114,7 +114,7 @@ const MeetOurTeamDetailed = ({ url }) => {
                     <Link
                       href={`${td.url}`}
                       className={`block px-5 py-3 transition ${td.url === url
-                        ? "bg-[#00bfe6] text-white"
+                        ? "bg-[#14adac] text-white"
                         : "hover:bg-[#f0f9ff] text-gray-700"
                         }`}
                     >

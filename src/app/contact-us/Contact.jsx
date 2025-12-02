@@ -94,7 +94,7 @@ const Contact = () => {
               </h3>
               <p className="text-sm text-gray-600 text-center leading-relaxed hover:text-[#14adac]">
                 <strong>
-                  Max Hospital <br /> (All - Days)
+                  BLK Max Hospital <br /> (All - Days)
                 </strong>
                 <br />
                 8:00 AM to 4:00 PM

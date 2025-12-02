@@ -8,7 +8,7 @@ export default function GynaecologicalSurgicalOncology() {
   return (
     <div className="max-w-5xl mx-auto py-10 px-4">
       <h1 className="text-3xl font-bold text-[#1e3b70] mb-2 text-center" style={{ fontFamily: "Roboto Slab, serif" }}>
-        Gynaecological Surgical Oncology
+        Gynaecological Cancer Surgery
       </h1>
       <div className="w-24 h-[4px] bg-[#0b2c5f] mx-auto mb-12 rounded-full"></div>
 

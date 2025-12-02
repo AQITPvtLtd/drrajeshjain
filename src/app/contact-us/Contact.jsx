@@ -25,7 +25,7 @@ const Contact = () => {
             href="mailto:drrajeshjainonococare@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white shadow-md rounded-2xl py-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#14adac] block hover:bg-[#f9fafb]"
+            className="bg-white shadow-md rounded-2xl py-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#1e3b70] block hover:bg-[#f9fafb]"
           >
             <div className="flex justify-center mb-4">
               <FaEnvelope className="text-[#14adac] text-3xl" />
@@ -39,25 +39,36 @@ const Contact = () => {
           </Link>
 
           {/* Phone */}
-          <Link
-            href="tel:9810465644"
-            className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#14adac] block hover:bg-[#f9fafb]"
+          <div
+            className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#1e3b70] hover:bg-[#f9fafb]"
           >
             <div className="flex justify-center mb-4">
               <FaPhoneAlt className="text-[#14adac] text-3xl" />
             </div>
+
             <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
               Let's Talk
             </h3>
-            <p className="text-sm text-gray-600 text-center">+91 98104 65644</p>
-          </Link>
+
+            {/* Numbers */}
+            <div className="text-sm text-gray-600 text-center space-y-1">
+              <Link href="tel:9599206900" className="block hover:text-[#14adac]">
+                +91 95992 06900
+              </Link>
+
+              <Link href="tel:9560658828" className="block hover:text-[#14adac]">
+                +91 95606 58828
+              </Link>
+            </div>
+          </div>
+
 
           {/* Location */}
           <Link
             href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#14adac] block hover:bg-[#f9fafb]"
+            className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#1e3b70] block hover:bg-[#f9fafb]"
           >
             <div className="flex justify-center mb-4">
               <FaMapMarkerAlt className="text-[#14adac] text-3xl" />
@@ -73,7 +84,7 @@ const Contact = () => {
           </Link>
 
           {/* Timing */}
-          <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#14adac] hover:bg-[#f9fafb]">
+          <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#1e3b70] hover:bg-[#f9fafb]">
             <div className="flex justify-center mb-4">
               <FaClock className="text-[#14adac] text-3xl" />
             </div>

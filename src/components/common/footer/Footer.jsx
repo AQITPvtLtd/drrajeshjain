@@ -124,8 +124,15 @@ export default function Footer() {
                 <ul className="space-y-3 text-sm">
                   <li className="flex items-center gap-3">
                     <FaPhone className="text-[#14adac]" />
-                    <Link href="tel:+919810465644" className="hover:text-[#14adac]">
-                      +91 98104 65644
+                    <Link href="tel:9599206900" className="hover:text-[#14adac]">
+                      +91 95992 06900
+                    </Link>
+                  </li>
+
+                  <li className="flex items-center gap-3">
+                    <FaPhone className="text-[#14adac]" />
+                    <Link href="tel:9560658828" className="hover:text-[#14adac]">
+                      +91 95606 58828
                     </Link>
                   </li>
 

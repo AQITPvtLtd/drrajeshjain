@@ -2,6 +2,7 @@
 import Image from "next/image";
 import MissionVision from "./missionvision/MissionVision";
 import Faq from "@/components/homepage/Faq";
+import Testimonials from "@/components/homepage/Testimonials";
 
 export default function AboutUs() {
   return (
@@ -52,6 +53,7 @@ export default function AboutUs() {
       </section>
 
       <MissionVision />
+      <Testimonials />
       <Faq />
     </section>
   );

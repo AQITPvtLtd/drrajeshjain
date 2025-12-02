@@ -28,8 +28,8 @@ const NavLinks = () => {
   ];
 
   const callData = {
-    phone: "9810465644",
-    display: "+91 98104 65644",
+    phone: "9599206900",
+    display: "+91 95992 06900",
   };
 
   return (

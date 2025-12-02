@@ -33,7 +33,7 @@ const Contact = () => {
             <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
               Email Support
             </h3>
-            <p className="text-sm text-gray-600 text-center whitespace-nowrap overflow-x-auto no-scrollbar">
+            <p className="text-sm text-gray-600 text-center whitespace-nowrap overflow-x-auto no-scrollbar hover:text-[#14adac]">
               drrajeshjainonococare@gmail.com
             </p>
           </Link>
@@ -76,7 +76,7 @@ const Contact = () => {
             <h3 className="text-lg font-semibold text-gray-800 mb-2 text-center">
               Location
             </h3>
-            <p className="text-sm text-gray-600 text-center leading-relaxed">
+            <p className="text-sm text-gray-600 text-center leading-relaxed hover:text-[#14adac]">
               Pusa Rd, Radha Soami Satsang,
               <br />
               Rajinder Nagar, New Delhi, Delhi, 110005
@@ -84,24 +84,25 @@ const Contact = () => {
           </Link>
 
           {/* Timing */}
-          <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#1e3b70] hover:bg-[#f9fafb]">
-            <div className="flex justify-center mb-4">
-              <FaClock className="text-[#14adac] text-3xl" />
+          <Link href="https://maps.app.goo.gl/kyS7v8moezXd7k6N7" target="_blank" className="block">
+            <div className="bg-white shadow-md rounded-2xl p-6 sm:p-8 transition-transform hover:-translate-y-1 hover:shadow-2xl border-t-4 border-[#1e3b70] hover:bg-[#f9fafb]">
+              <div className="flex justify-center mb-4">
+                <FaClock className="text-[#14adac] text-3xl" />
+              </div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center">
+                Timing Schedule
+              </h3>
+              <p className="text-sm text-gray-600 text-center leading-relaxed hover:text-[#14adac]">
+                <strong>
+                  Max Hospital <br /> (All - Days)
+                </strong>
+                <br />
+                8:00 AM to 4:00 PM
+              </p>
             </div>
-            <h3 className="text-lg font-semibold text-gray-800 mb-3 text-center">
-              Timing Schedule
-            </h3>
-            <p className="text-sm text-gray-600 text-center leading-relaxed">
-              <strong>
-                Max Hospital <br /> (All - Days)
-              </strong>
-              <br />
-              8:00 AM to 4:00 PM
-            </p>
-          </div>
+          </Link>
+
         </div>
-
-
 
         {/* Contact Form */}
         <div>

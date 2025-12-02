@@ -106,14 +106,17 @@ export default function Footer() {
                 <h2 className="text-2xl font-semibold mb-4" style={{ fontFamily: "Roboto Slab, serif" }}>Treatments</h2>
                 <ul className="grid grid-cols-2 gap-x-6 text-sm">
                   <div className="space-y-2">
-                    <li><Link href="/our-team/dr-rajesh-jain" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Surgical Oncology</Link></li>
-                    <li><Link href="/our-team/dr-ishan-mohan" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Head & Neck Oncosurgery</Link></li>
-                    <li><Link href="/our-team/dr-himanshu-gupta" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Plastic & Onco Reconstructive Surgery</Link></li>
+                    <li><Link href="/our-team/dr-pranjal-kulshreshtha" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Breast Cancer Surgery</Link></li>
+                    <li><Link href="/our-team/dr-ishan-mohan" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Head & Neck Cancer Surgery</Link></li>
+                    <li><Link href="/treatments/gynaecological" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Gynaecological Cancer Surgery</Link></li>
+                    <li><Link href="/our-team/dr-rajesh-jain" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Gastrointestinal Cancer Surgery</Link></li>
                   </div>
 
                   <div className="space-y-2">
-                    <li><Link href="/our-team/dr-pranjal-kulshreshtha" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Breast Oncological Surgery</Link></li>
-                    <li><Link href="/treatments/gynaecological" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Gynaecological Surgical Oncology</Link></li>
+                    <li><Link href="/our-team/dr-rajesh-jain" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Thoracic Cancer Surgery</Link></li>
+                    <li><Link href="/our-team/dr-rajesh-jain" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Bone & Soft tissue Cancer Surgery</Link></li>
+                    <li><Link href="/our-team/dr-rajesh-jain" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Urological Cancer Surgery</Link></li>
+                    <li><Link href="/our-team/dr-himanshu-gupta" className="flex items-start gap-2 hover:text-[#14adac]"><span>›</span>Oncoplastic & Reconstructive Surgery</Link></li>
                   </div>
                 </ul>
               </div>

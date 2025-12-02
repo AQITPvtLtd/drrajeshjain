@@ -56,7 +56,10 @@ const MeetOurTeamDetailed = ({ url }) => {
             <div className="bg-white rounded-2xl shadow-md p-8 border border-gray-100">
               {/* Image + Title Row */}
               <div className="flex flex-col sm:flex-row gap-8 items-center sm:items-start mb-8">
-                <div className="relative w-full max-w-xs h-64 rounded-2xl overflow-hidden shadow mx-auto md:w-48 md:h-48">
+
+                {/* IMAGE — FIX ONLY ON LARGE SCREEN */}
+                <div className="relative w-full max-w-xs h-64 rounded-2xl overflow-hidden shadow mx-auto
+                  lg:w-48 lg:h-48 lg:flex-shrink-0">
                   <Image
                     src={
                       teamdetaild.image?.startsWith("http")
@@ -70,29 +73,30 @@ const MeetOurTeamDetailed = ({ url }) => {
                   />
                 </div>
 
-                <div className="space-y-3">
-                  {/* Name */}
-                  <h1 className="text-3xl md:text-4xl font-bold text-[#1e3b70] leading-tight" style={{ fontFamily: "Roboto Slab, serif" }}>
+                {/* TEXT — MAX WIDTH ONLY ON LARGE SCREEN */}
+                <div className="space-y-3 lg:max-w-xl">
+
+                  <h1 className="text-3xl md:text-4xl font-bold text-[#1e3b70] leading-tight"
+                    style={{ fontFamily: "Roboto Slab, serif" }}>
                     {teamdetaild.title}
                   </h1>
 
-                  {/* Role */}
                   {teamdetaild.role && (
-                    <p className="text-xl md:text-3xl text-[#345a9d] font-semibold tracking-wide">
+                    <p className="text-xl md:text-3xl text-[#345a9d] font-semibold tracking-wide lg:break-words">
                       {teamdetaild.role}
                     </p>
                   )}
 
-                  {/* Address */}
                   {teamdetaild.address && (
                     <div className="flex items-center gap-2 text-gray-700 text-lg mt-1">
                       <FaLocationDot className="text-[#1e3b70] text-xl" />
                       <span className="leading-relaxed">{teamdetaild.address}</span>
                     </div>
                   )}
-                </div>
 
+                </div>
               </div>
+
 
               {/* Content */}
               <div

@@ -5,9 +5,8 @@ import { FaHeart, FaUser, FaVial, FaArrowRight } from "react-icons/fa";
 import { GiStomach } from "react-icons/gi";
 import { GiLungs } from "react-icons/gi";
 import { TbBone } from "react-icons/tb";
-import { GiKidneys } from "react-icons/gi";
-import { MdMedicalServices } from "react-icons/md";
-import { FaBandAid } from "react-icons/fa";
+import { GiKidneys, GiHeadshot } from "react-icons/gi";
+import { LuScissors } from "react-icons/lu";
 import { FaRibbon } from "react-icons/fa";
 import { FaFemale } from "react-icons/fa";
 
@@ -41,7 +40,7 @@ const services = [
     href: "/our-team/dr-rajesh-jain",
   },
   {
-    icon: <MdMedicalServices className="text-white text-3xl" />,
+    icon: <GiHeadshot className="text-white text-3xl" />,
     title: "Head & Neck Cancer Surgery",
     description:
       "",
@@ -62,7 +61,7 @@ const services = [
     href: "/treatments/gynaecological",
   },
   {
-    icon: <FaBandAid className="text-white text-3xl" />,
+    icon: <LuScissors className="text-white text-3xl" />,
     title: "Oncoplastic & Reconstructive Surgery",
     description:
       "",
